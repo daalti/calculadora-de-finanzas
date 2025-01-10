@@ -54,3 +54,18 @@
 .tab-menu-link:hover::after {
   width: 100%;
 }
+
+.tab-menu-navigation li {
+  position: relative;
+}
+
+.dropdown-menu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.tab-menu-navigation li:hover .dropdown-menu-content {
+  display: block;
+}

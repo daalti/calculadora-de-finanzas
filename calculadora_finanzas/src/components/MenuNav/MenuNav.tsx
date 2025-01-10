@@ -1,5 +1,7 @@
 import logo from "../../assets/logo/logo.svg";
 import "./MenuNav.css";
+import { DropdownMenu, DropdownMenuTrigger } from "../tremor/DropDownMenu";
+import { DropdownMenuHero } from "../drowDownMenuHero/DropDownMenuHero";
 
 export const MenuNav = () => (
   <div className="tab-menu-container-wraper">
@@ -9,14 +11,24 @@ export const MenuNav = () => (
       </div>
       <ul className="tab-menu-navigation">
         <li>
-          <a href="#" className="tab-menu-link">
-            Calculadoras
-          </a>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <a href="#" className="tab-menu-link">
+                Calculadoras
+              </a>
+            </DropdownMenuTrigger>
+            <DropdownMenuHero />
+          </DropdownMenu>
         </li>
         <li>
-          <a href="#" className="tab-menu-link">
-            Glosario
-          </a>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <a href="#" className="tab-menu-link">
+                Glosario
+              </a>
+            </DropdownMenuTrigger>
+            <DropdownMenuHero />
+          </DropdownMenu>
         </li>
         <li>
           <a href="#" className="tab-menu-link">
