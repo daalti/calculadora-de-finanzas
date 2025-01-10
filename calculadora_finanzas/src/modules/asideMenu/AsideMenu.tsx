@@ -1,5 +1,6 @@
 import { Card } from "../../components/tremor/Card";
 import { Label } from "../../components/tremor/Label";
+import { Link } from "react-router-dom";
 import "./AsideMenu.css";
 
 interface Props {}
@@ -15,7 +16,7 @@ export const AsideMenu: React.FC<Props> = () => {
           <ul className="aside-menu-ul">
             <li>
               <Label>
-                <a href="#">Savings Goal Calculator</a>
+                <Link to="/valor-presente">Calculadora Valor Presente</Link>
               </Label>
             </li>
             <li>

@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100vw;
-
+  background-color: #f8f9fa;
   border-style: solid;
   border-color: #e5e7eb;
   border-width: 0 0 1px 0;
@@ -32,12 +32,12 @@
   height: auto;
 }
 
-/* ...existing code... */
-
 .tab-menu-link {
   position: relative;
   text-decoration: none;
-  color: inherit;
+  color: #374151;
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .tab-menu-link::after {

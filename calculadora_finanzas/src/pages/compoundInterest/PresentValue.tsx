@@ -7,7 +7,7 @@ import "./CompoundInterest.css";
 
 interface Props {}
 
-export const CompoundInterest: React.FC<Props> = () => {
+export const PresentValue: React.FC<Props> = () => {
   return (
     <div className="compound-interest">
       <header className="compound-interest-header">
@@ -16,7 +16,7 @@ export const CompoundInterest: React.FC<Props> = () => {
       <div className="compound-interest-main">
         <div className="compound-interest-content-container">
           <h1 className="compound-interest-title">
-            Calculadora Interes Compuesto
+            Calculadora Valor Presente
           </h1>
           <CalloutMessage />
           <main className="compound-interest-content">

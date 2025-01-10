@@ -23,6 +23,11 @@ export const MenuNav = () => (
             Libros
           </a>
         </li>
+        <li>
+          <a href="#" className="tab-menu-link">
+            Blog
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
