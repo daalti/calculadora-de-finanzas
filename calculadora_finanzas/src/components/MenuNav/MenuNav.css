@@ -1,0 +1,56 @@
+.tab-menu-container-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+
+  border-style: solid;
+  border-color: #e5e7eb;
+  border-width: 0 0 1px 0;
+}
+
+.tab-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1400px;
+  height: 50px;
+  width: 100%;
+}
+
+.tab-menu-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-weight: 600;
+}
+
+.tab-menu-logo {
+  width: 50px;
+  height: auto;
+}
+
+/* ...existing code... */
+
+.tab-menu-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tab-menu-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.5s ease;
+}
+
+.tab-menu-link:hover::after {
+  width: 100%;
+}

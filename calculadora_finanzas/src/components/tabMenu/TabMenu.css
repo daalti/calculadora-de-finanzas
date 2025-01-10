@@ -1,0 +1,33 @@
+.tab-menu-container-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+
+  border-style: solid;
+  border-color: #e5e7eb;
+  border-width: 0 0 1px 0;
+}
+
+.tab-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 1400px;
+  height: 50px;
+  width: 100%;
+}
+
+.tab-menu-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.tab-menu-logo {
+  width: 50px;
+  height: auto;
+}

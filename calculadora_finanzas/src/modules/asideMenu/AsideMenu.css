@@ -1,0 +1,32 @@
+.aside-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.aside-menu-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ...existing code... */
+
+.aside-menu-ul > li a {
+  position: relative;
+}
+
+.aside-menu-ul > li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.5s ease;
+}
+
+.aside-menu-ul > li a:hover::after {
+  width: 100%;
+}
