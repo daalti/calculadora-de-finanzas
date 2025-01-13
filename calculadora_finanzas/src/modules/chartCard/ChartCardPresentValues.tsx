@@ -2,7 +2,7 @@ import { Card } from "../../components/tremor/Card";
 import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
 import { Button } from "../../components/tremor/Button";
-import { DonutChartHero } from "../../components/donutChartHero/DonutChartHero";
+import { DonutChartTemplate } from "../../components/donutChartTemplate/DonutChartTemplate";
 import { TableDonut } from "../tables/TableDonut";
 import { TableArea } from "../tables/TableArea";
 import { LineChartInterest } from "../lineChart/LineChartInterest";
@@ -202,7 +202,7 @@ export const ChartCardPresentValue: React.FC<Props> = () => {
             />
             <TableDonut data={totalData} />
           </div>
-          <DonutChartHero data={totalData} />
+          <DonutChartTemplate data={totalData} />
         </div>
         <LineChartInterest chartData={chartData} />
         <TableArea chartData={chartData} />

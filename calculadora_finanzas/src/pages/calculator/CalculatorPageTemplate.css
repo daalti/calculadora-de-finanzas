@@ -6,13 +6,6 @@
   gap: 20px;
 }
 
-.compound-interest-header {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-}
-
 .compound-interest-main {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,10 @@
+.compound-interest-header {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .tab-menu-container-wraper {
   display: flex;
   flex-direction: row;

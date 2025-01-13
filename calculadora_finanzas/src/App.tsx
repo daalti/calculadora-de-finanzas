@@ -1,6 +1,6 @@
 import "./App.css";
-import { CompoundInterest } from "./pages/compoundInterest/CompundInterest";
-import { PresentValue } from "./pages/compoundInterest/PresentValue";
+import { CompoundInterest } from "./pages/calculator/CompundInterest";
+import { PresentValue } from "./pages/calculator/PresentValue";
 import { Routes, Route } from "react-router-dom";
 
 function App(): JSX.Element {

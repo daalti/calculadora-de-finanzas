@@ -1,6 +1,6 @@
 "use client";
 
-import { DonutChart } from "../../components/tremor/DonutChart";
+import { DonutChart } from "../tremor/DonutChart";
 
 interface data {
   totalInterest: number;
@@ -12,7 +12,7 @@ interface Props {
   data: data;
 }
 
-export const DonutChartHero: React.FC<Props> = ({
+export const DonutChartTemplate: React.FC<Props> = ({
   data = {
     totalInterest: 10,
     totalContributions: 10,
