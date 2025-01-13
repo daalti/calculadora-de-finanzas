@@ -6,17 +6,15 @@ import { DonutChartHero } from "../../components/donutChartHero/DonutChartHero";
 import { TableDonut } from "../tables/TableDonut";
 import { TableArea } from "../tables/TableArea";
 import { LineChartInterest } from "../lineChart/LineChartInterest";
-import { CalloutMessage } from "../callOut/CallOut";
 import { useState, useEffect } from "react";
+import { CalloutMessage } from "../callOut/CallOut";
 
 interface Props {}
 
 interface FormData {
-  initialInvestment: number;
-  monthlyContribution: number;
+  futureValue: number;
   years: number;
-  interestRate: number;
-  compoundingFrequency: number;
+  discountRate: number;
 }
 
 interface ChartData {
@@ -32,13 +30,11 @@ interface TotalData {
   initialInvestment: number;
 }
 
-export const ChartCard: React.FC<Props> = () => {
+export const ChartCardPresentValue: React.FC<Props> = () => {
   const [formData, setFormData] = useState<FormData>({
-    initialInvestment: 1000,
-    monthlyContribution: 100,
+    futureValue: 1000000,
     years: 10,
-    interestRate: 10,
-    compoundingFrequency: 12,
+    discountRate: 10,
   });
 
   const [chartData, setChartData] = useState<ChartData[]>([]);
@@ -48,74 +44,43 @@ export const ChartCard: React.FC<Props> = () => {
     initialInvestment: 0,
   });
 
-  const calculateCompoundInterest = () => {
-    const {
-      initialInvestment,
-      monthlyContribution,
-      years,
-      interestRate,
-      compoundingFrequency,
-    } = formData;
-
+  const calculatePresentValue = () => {
+    const { futureValue, years, discountRate } = formData;
     const data: ChartData[] = [];
-    let balance = initialInvestment;
-    const periodsPerYear = compoundingFrequency;
-    const periodicRate = interestRate / 100 / periodsPerYear;
-    const monthsPerPeriod = 12 / periodsPerYear;
-    console.log("initialInvestment", initialInvestment);
-    console.log("monthlyContribution", monthlyContribution);
-    console.log("years", years);
-    console.log("interestRate", interestRate);
-    console.log("compoundingFrequency", compoundingFrequency);
+    const rate = discountRate / 100;
 
+    // Calculate initial present value
+    const presentValue = futureValue / Math.pow(1 + rate, years);
+
+    // Track year by year progress
     for (let year = 1; year <= years; year++) {
-      let yearlyInterest = 0;
-      let yearlyContributions = 0;
-
-      // Calculate for each compounding period in the year
-      for (let period = 1; period <= periodsPerYear; period++) {
-        // Add contributions for this period
-        const contributionsThisPeriod = monthlyContribution * monthsPerPeriod;
-        balance += contributionsThisPeriod;
-        yearlyContributions += contributionsThisPeriod;
-
-        // Calculate and add periodic interest
-        const periodInterest = balance * periodicRate;
-        balance += periodInterest;
-        yearlyInterest += periodInterest;
-      }
+      const valueAtYear = presentValue * Math.pow(1 + rate, year);
+      const yearlyInterest = valueAtYear - presentValue;
 
       data.push({
         year,
-        balance: Math.round(balance),
+        balance: Math.round(valueAtYear),
         interest: Math.round(yearlyInterest),
-        contributions: Math.round(yearlyContributions),
+        contributions: Math.round(presentValue),
       });
-      setResetData(false);
     }
-
+    setResetData(false);
+    setChartData(data);
     setTotalData({
-      totalInterest: data.reduce((acc, item) => acc + item.interest, 0),
-      totalContributions: data.reduce(
-        (acc, item) => acc + item.contributions,
-        0
-      ),
-      initialInvestment,
+      totalInterest: Math.round(futureValue - presentValue),
+      totalContributions: 0,
+      initialInvestment: Math.round(presentValue),
     });
 
-    setChartData(data);
-    console.log(data);
     return data;
   };
 
   const [resetData, setResetData] = useState(true);
   const resetCompoundInterestValues = () => {
     setFormData({
-      initialInvestment: 1000,
-      monthlyContribution: 100,
+      futureValue: 1000000,
       years: 10,
-      interestRate: 10,
-      compoundingFrequency: 12,
+      discountRate: 10,
     });
     setResetData(true);
   };
@@ -131,12 +96,11 @@ export const ChartCard: React.FC<Props> = () => {
 
   useEffect(() => {
     if (resetData) {
-      calculateCompoundInterest();
+      calculatePresentValue();
     }
   }, [resetData]);
 
   const [isEditing, setIsEditing] = useState(false);
-  const [isEditingMonthly, setIsEditingMonthly] = useState(false);
   const [isEditingInterest, setIsEditingInterest] = useState(false);
 
   const formatCurrency = (value: number) => {
@@ -150,7 +114,7 @@ export const ChartCard: React.FC<Props> = () => {
 
   const RESULT_MESSAGE = (
     <>
-      Puedes ganar{" "}
+      Para ganar{" "}
       <strong>
         {(
           totalData.totalInterest +
@@ -163,7 +127,7 @@ export const ChartCard: React.FC<Props> = () => {
           maximumFractionDigits: 2,
         })}
       </strong>{" "}
-      con una inversión inicial de{" "}
+      necesitas una inversión inicial de{" "}
       <strong>
         {totalData.initialInvestment.toLocaleString("es-ES", {
           style: "currency",
@@ -179,58 +143,38 @@ export const ChartCard: React.FC<Props> = () => {
     <div className="compound-interest-card-container">
       <Card className="compound-interest-card">
         <div className="input-container">
-          <Label className="label-item">Inversión inicial</Label>
+          <Label className="label-item">Valor Futuro</Label>
           <Input
             className="input-item"
-            placeholder="Introduce cantidad en €"
+            placeholder="Introduce valor futuro deseado en €"
             value={
               isEditing
-                ? formData.initialInvestment
-                : formatCurrency(formData.initialInvestment)
+                ? formData.futureValue
+                : formatCurrency(formData.futureValue)
             }
             onFocus={() => setIsEditing(true)}
             onBlur={() => setIsEditing(false)}
-            onChange={handleInputChange("initialInvestment")}
+            onChange={handleInputChange("futureValue")}
           />
         </div>
         <div className="input-container">
-          <Label className="label-item">Contribución Mensual</Label>
+          <Label className="label-item">Años</Label>
           <Input
             className="input-item"
-            placeholder="Introduce cantidad en €"
-            value={
-              isEditingMonthly
-                ? formData.monthlyContribution
-                : formData.monthlyContribution.toLocaleString("es-ES", {
-                    style: "currency",
-                    currency: "EUR",
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  })
-            }
-            onFocus={() => setIsEditingMonthly(true)}
-            onBlur={() => setIsEditingMonthly(false)}
-            onChange={handleInputChange("monthlyContribution")}
-          />
-        </div>
-        <div className="input-container">
-          <Label className="label-item">Cantidad de tiempo en años</Label>
-          <Input
-            className="input-item"
-            onChange={handleInputChange("years")}
+            placeholder="Introduce cantidad de años"
             value={formData.years}
-            placeholder="Ingrese los años"
+            onChange={handleInputChange("years")}
           />
         </div>
         <div className="input-container">
-          <Label className="label-item">Tasa de interes estimada</Label>
+          <Label className="label-item">Tasa de Descuento (%)</Label>
           <Input
             className="input-item"
-            placeholder="Introduce porcentaje %"
+            placeholder="Introduce tasa de descuento"
             value={
               isEditingInterest
-                ? formData.interestRate
-                : (formData.interestRate / 100).toLocaleString("es-ES", {
+                ? formData.discountRate
+                : (formData.discountRate / 100).toLocaleString("es-ES", {
                     style: "percent",
                     minimumFractionDigits: 2,
                     maximumFractionDigits: 2,
@@ -238,11 +182,11 @@ export const ChartCard: React.FC<Props> = () => {
             }
             onFocus={() => setIsEditingInterest(true)}
             onBlur={() => setIsEditingInterest(false)}
-            onChange={handleInputChange("interestRate")}
+            onChange={handleInputChange("discountRate")}
           />
         </div>
         <div className="flex justify-center gap-8">
-          <Button onClick={calculateCompoundInterest}>Calcular</Button>
+          <Button onClick={calculatePresentValue}>Calcular</Button>
           <Button variant="secondary" onClick={resetCompoundInterestValues}>
             Reiniciar
           </Button>

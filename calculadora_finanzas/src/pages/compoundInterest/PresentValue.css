@@ -1,0 +1,88 @@
+.compound-interest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.compound-interest-header {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.compound-interest-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.compound-interest-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.compound-interest-content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.compound-interest-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.compound-interest-card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  gap: 20px;
+}
+
+.compound-interest-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.label-item {
+  width: 200px;
+  text-align: left;
+}
+
+.input-item {
+  width: 300px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.compound-interest-card-chart {
+  gap: 70px;
+}
