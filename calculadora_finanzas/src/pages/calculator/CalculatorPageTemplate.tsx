@@ -1,9 +1,9 @@
-import { MenuNav } from "../../components/MenuNav/MenuNav";
+import { MenuNav } from "../../modules/MenuNav/MenuNav";
 import { AsideMenu } from "../../modules/asideMenu/AsideMenu";
 import { ChartCard } from "../../modules/chartCard/ChartCard";
 import { ChartCardPresentValue } from "../../modules/chartCard/ChartCardPresentValues";
 import { CalloutMessage } from "../../modules/callOut/CallOut";
-import { FooterPage } from "../../components/footer/Footer";
+import { FooterPage } from "../../modules/footer/Footer";
 import "./CalculatorPageTemplate.css";
 
 interface Props {

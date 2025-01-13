@@ -1,7 +1,10 @@
 import logo from "../../assets/logo/logo.svg";
 import "./MenuNav.css";
-import { DropdownMenu, DropdownMenuTrigger } from "../tremor/DropDownMenu";
-import { DropdownMenuHero } from "../drowDownMenuHero/DropDownMenuHero";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+} from "../../components/tremor/DropDownMenu";
+import { DropdownMenuHero } from "../../components/drowDownMenuHero/DropDownMenuHero";
 
 export const MenuNav = () => (
   <header className="compound-interest-header">
