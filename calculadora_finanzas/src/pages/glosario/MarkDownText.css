@@ -1,0 +1,37 @@
+.venture-capital-container {
+  display: flex;
+  justify-content: center;
+}
+
+.venture-capital-card {
+  max-width: 1000px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.venture-capital-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.venture-capital-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+}
+
+.venture-capital-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.venture-capital-card ul,
+.venture-capital-card ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.venture-capital-card strong {
+  font-weight: 600;
+}

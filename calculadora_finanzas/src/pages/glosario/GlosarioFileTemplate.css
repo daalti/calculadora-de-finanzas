@@ -1,0 +1,22 @@
+.glosario-file-template {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.glosario-file-template-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+.glosario-file-template-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
