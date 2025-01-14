@@ -2,6 +2,8 @@ import { MenuNav } from "../../modules/MenuNav/MenuNav";
 import { AsideMenu } from "../../modules/asideMenu/AsideMenu";
 import { ChartCard } from "../../modules/chartCard/ChartCard";
 import { ChartCardPresentValue } from "../../modules/chartCard/ChartCardPresentValues";
+import { ChartCardReturnRate } from "../../modules/chartCard/ChartCardReturnRate";
+import { ChartCardAverageStock } from "../../modules/chartCard/ChartCardAverageStock";
 import { CalloutMessage } from "../../modules/callOut/CallOut";
 import { FooterPage } from "../../modules/footer/Footer";
 import "./CalculatorPageTemplate.css";
@@ -9,7 +11,7 @@ import "./CalculatorPageTemplate.css";
 interface Props {
   title: string;
   message: React.ReactNode;
-  type: "compoundInterest" | "presentValue";
+  type: "compoundInterest" | "presentValue" | "returnRate" | "averageStock";
 }
 
 export const CalculatorPageTemplate: React.FC<Props> = ({
@@ -28,6 +30,8 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
             <AsideMenu />
             {type === "compoundInterest" ? <ChartCard /> : null}
             {type === "presentValue" ? <ChartCardPresentValue /> : null}
+            {type === "returnRate" ? <ChartCardReturnRate /> : null}
+            {type === "averageStock" ? <ChartCardAverageStock /> : null}
           </main>
         </div>
       </div>

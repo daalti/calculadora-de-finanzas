@@ -21,12 +21,14 @@ export const AsideMenu: React.FC<Props> = () => {
             </li>
             <li>
               <Label>
-                <a href="#">Required Minimum Distribution Calculator</a>
+                <a href="/tasa-de-retorno">
+                  Calculadora Tasa de Retorno (CAGR)
+                </a>
               </Label>
             </li>
             <li>
               <Label>
-                <a href="#">College Savings Calculator</a>
+                <a href="/promedio-acciones">Promedio Acciones</a>
               </Label>
             </li>
           </ul>

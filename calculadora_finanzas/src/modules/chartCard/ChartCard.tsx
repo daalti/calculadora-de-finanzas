@@ -8,6 +8,7 @@ import { TableArea } from "../tables/TableArea";
 import { LineChartInterest } from "../lineChart/LineChartInterest";
 import { CalloutMessage } from "../callOut/CallOut";
 import { useState, useEffect } from "react";
+import "./ChartCard.css";
 
 interface Props {}
 

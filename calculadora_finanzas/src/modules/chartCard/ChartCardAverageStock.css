@@ -1,0 +1,30 @@
+.average-stock-card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  gap: 20px;
+}
+
+.average-stock-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.average-stock-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.average-stock-label-item {
+  text-align: left;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
