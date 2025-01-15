@@ -31,6 +31,11 @@ export const AsideMenu: React.FC<Props> = () => {
                 <a href="/promedio-acciones">Promedio Acciones</a>
               </Label>
             </li>
+            <li>
+              <Label>
+                <a href="/calculadora-IRPF-2025">Calculadora IRPF 2025</a>
+              </Label>
+            </li>
           </ul>
         </div>
         <div>

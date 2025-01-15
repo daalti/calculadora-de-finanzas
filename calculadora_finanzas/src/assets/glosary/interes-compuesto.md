@@ -20,7 +20,7 @@ Donde:
 
 > **Sugerencia para una imagen**: Incluir un gráfico que muestre el crecimiento exponencial del interés compuesto comparado con el interés simple.
 
-## Ejemplo práctico
+### Ejemplo práctico
 
 Supongamos que inviertes $1,000 a una tasa de interés anual del 5%, capitalizada anualmente, durante 10 años. Usando la fórmula:
 
@@ -40,7 +40,7 @@ Esto significa que después de 10 años, el monto acumulado será aproximadament
 
 > **Sugerencia para una imagen**: Mostrar un cálculo paso a paso visual, con una tabla de valores año por año que ilustre el crecimiento del capital.
 
-## La magia del tiempo
+### La magia del tiempo
 
 El tiempo es un factor clave en el interés compuesto. Cuanto más tiempo se mantenga una inversión, mayor será el impacto del interés compuesto debido al crecimiento exponencial. Esto lo convierte en una herramienta poderosa para el ahorro a largo plazo y la inversión.
 

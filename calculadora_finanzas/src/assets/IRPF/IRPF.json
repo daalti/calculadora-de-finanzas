@@ -1,0 +1,303 @@
+{
+  "IRPF_Autonomico": {
+    "Andalucía": [
+      { "desde": 0, "hasta": 13000, "tipo": 9.5 },
+      { "desde": 13000.01, "hasta": 21000, "tipo": 12 },
+      { "desde": 21000.01, "hasta": 35200, "tipo": 15 },
+      { "desde": 35200.01, "hasta": 50000, "tipo": 18.5 },
+      { "desde": 50000.01, "hasta": "en adelante", "tipo": 22.5 }
+    ],
+    "Aragón": [
+      { "desde": 0, "hasta": 13972.5, "tipo": 9.5 },
+      { "desde": 13972.51, "hasta": 21209.9, "tipo": 12 },
+      { "desde": 21210, "hasta": 36959.9, "tipo": 15 },
+      { "desde": 36960, "hasta": 52499.9, "tipo": 18.5 },
+      { "desde": 52500, "hasta": 59999.9, "tipo": 20.5 },
+      { "desde": 60000, "hasta": 79999.9, "tipo": 23 },
+      { "desde": 80000, "hasta": 89999.9, "tipo": 24 },
+      { "desde": 90000, "hasta": 129999.9, "tipo": 25 },
+      { "desde": 130000, "hasta": "en adelante", "tipo": 25.5 }
+    ],
+    "Asturias": [
+      { "desde": 0, "hasta": 12450, "tipo": 10 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 12 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 14 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 18.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 21.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 22.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 25 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 25.5 }
+    ],
+    "Islas Baleares": [
+      { "desde": 0, "hasta": 12450, "tipo": 9 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "Canarias": [
+      { "desde": 0, "hasta": 12450, "tipo": 9 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24 }
+    ],
+    "Cantabria": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "Castilla-La Mancha": [
+      { "desde": 0, "hasta": 12450, "tipo": 9 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24 }
+    ],
+    "Castilla y León": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "Cataluña": [
+      { "desde": 0, "hasta": 12450, "tipo": 10 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 12.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 14.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 18.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 21.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 22.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 24.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 25 }
+    ],
+    "Extremadura": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "Galicia": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "La Rioja": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "Madrid": [
+      { "desde": 0, "hasta": 12450, "tipo": 9 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 10.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 12.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 16.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 18.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 19.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 21.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 22.5 }
+    ],
+    "Murcia": [
+      { "desde": 0, "hasta": 12450, "tipo": 9 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24 }
+    ],
+    "Navarra": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "País Vasco": [
+      { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 11.5 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 13.5 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 17.5 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20.5 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21.5 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23.5 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24.5 }
+    ],
+    "Valencia": [
+      { "desde": 0, "hasta": 12450, "tipo": 10 },
+      { "desde": 12450.01, "hasta": 17707, "tipo": 12 },
+      { "desde": 17707.01, "hasta": 33007, "tipo": 14 },
+      { "desde": 33007.01, "hasta": 53407, "tipo": 18 },
+      { "desde": 53407.01, "hasta": 70000, "tipo": 20 },
+      { "desde": 70000.01, "hasta": 90000, "tipo": 21 },
+      { "desde": 90000.01, "hasta": 175000, "tipo": 23 },
+      { "desde": 175000.01, "hasta": "en adelante", "tipo": 24 }
+    ]
+  },
+  "IRPF_Estatal": [
+    { "desde": 0, "hasta": 12450, "tipo": 9.5 },
+    { "desde": 12450.01, "hasta": 20200, "tipo": 12 },
+    { "desde": 20200.01, "hasta": 35200, "tipo": 15 },
+    { "desde": 35200.01, "hasta": 60000, "tipo": 18.5 },
+    { "desde": 60000.01, "hasta": "en adelante", "tipo": 22.5 }
+  ],
+
+  "CuotaSolidaridad": [
+    {
+      "tipo": "0.15%",
+      "desde": "4,909.01 €",
+      "hasta": "5,399.90 €"
+    },
+    {
+      "tipo": "0.17%",
+      "desde": "5,399.91 €",
+      "hasta": "7,363.50 €"
+    },
+    {
+      "tipo": "0.19%",
+      "desde": "7,363.51 €",
+      "hasta": "Exceso salarial superior a este monto"
+    }
+  ],
+
+  "TramosSeguridadSocial": [
+    {
+      "Grupo": 1,
+      "Categoria": "Ingenieros y Licenciados",
+      "BaseMinima": 1629.3,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 2,
+      "Categoria": "Ingenieros Técnicos, Peritos y Ayudantes",
+      "BaseMinima": 1351.2,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 3,
+      "Categoria": "Jefes Administrativos y de Taller",
+      "BaseMinima": 1174.2,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 4,
+      "Categoria": "Ayudantes no Titulados",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 5,
+      "Categoria": "Oficiales Administrativos",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 6,
+      "Categoria": "Subalternos",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 7,
+      "Categoria": "Auxiliares Administrativos",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 8,
+      "Categoria": "Oficiales de Primera y Segunda",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 9,
+      "Categoria": "Oficiales de Tercera y Especialistas",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 10,
+      "Categoria": "Peones",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    },
+    {
+      "Grupo": 11,
+      "Categoria": "Trabajadores Menores de 18 años",
+      "BaseMinima": 1166.7,
+      "BaseMaxima": 4909.5,
+      "PorcentajeTrabajador": 6.35
+    }
+  ],
+  "DeduccionesIRPF": [
+    {
+      "Tipo": "Movilidad Geográfica",
+      "Importe": 2000
+    },
+    {
+      "Tipo": "Maternidad o Paternidad",
+      "ImporteAnual": 1200
+    },
+    {
+      "Tipo": "Discapacidad",
+      "Importes": {
+        "SinDiscapacidad": 0,
+        "Entre33y65": 3000,
+        "Entre33y65ConAsistencia": 6000,
+        "Mas65": 9000
+      }
+    },
+    {
+      "Tipo": "Familia Numerosa",
+      "Importes": {
+        "General": 1200,
+        "Especial": 2400
+      }
+    }
+  ]
+}

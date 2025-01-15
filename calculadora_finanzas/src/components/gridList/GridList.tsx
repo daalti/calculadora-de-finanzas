@@ -8,7 +8,6 @@ import {
   RiSlackFill,
 } from "@remixicon/react";
 import { Card } from "../tremor/Card";
-import { Divider } from "../tremor/Divider";
 
 const data = [
   {
