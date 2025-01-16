@@ -30,16 +30,16 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
       <MenuNav />
       <div className="compound-interest-main">
         <div className="compound-interest-content-container">
-          <h1 className="compound-interest-title">{title}</h1>
-          <CalloutMessage message={message} title={title} variant="default" />
           <main className="compound-interest-content">
-            <AsideMenu />
+            <h1 className="compound-interest-title">{title}</h1>
+            <CalloutMessage message={message} title={title} variant="default" />
             {type === "compoundInterest" ? <ChartCard /> : null}
             {type === "presentValue" ? <ChartCardPresentValue /> : null}
             {type === "returnRate" ? <ChartCardReturnRate /> : null}
             {type === "averageStock" ? <ChartCardAverageStock /> : null}
             {type === "IRPF" ? <ChartCardIRPF /> : null}
           </main>
+          <AsideMenu />
         </div>
       </div>
       <FooterPage />

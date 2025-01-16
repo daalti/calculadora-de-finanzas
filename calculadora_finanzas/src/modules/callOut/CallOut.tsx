@@ -12,7 +12,10 @@ export const CalloutMessage: React.FC<Props> = ({
   title,
   variant = "default",
 }) => (
-  <div className="flex flex-col gap-4 callout-container">
+  <div
+    className="flex flex-col gap-4 callout-container"
+    style={{ maxWidth: "1000px" }}
+  >
     <Callout variant={variant} title={title}>
       {message}
     </Callout>

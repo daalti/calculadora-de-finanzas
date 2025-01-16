@@ -15,11 +15,11 @@ export const GlosarioFileTemplate: React.FC<Props> = ({ title }) => {
       <MenuNav />
       <div className="glosario-file-template-main">
         <div className="glosario-file-template-content">
-          <AsideMenu />
           <main>
             <MarkDownText title={title} />
             <GridList />
           </main>
+          <AsideMenu />
         </div>
       </div>
       <FooterPage />

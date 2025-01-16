@@ -10,7 +10,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%; /* Add this */
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 .compound-interest-title {
@@ -22,13 +24,14 @@
 
 .compound-interest-content-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 1400px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .compound-interest-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
