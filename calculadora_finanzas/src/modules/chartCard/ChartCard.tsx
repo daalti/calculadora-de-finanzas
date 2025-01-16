@@ -4,7 +4,7 @@ import { Label } from "../../components/tremor/Label";
 import { Button } from "../../components/tremor/Button";
 import { DonutChartTemplate } from "../../components/donutChartTemplate/DonutChartTemplate";
 import { TableDonut } from "../tables/TableDonut";
-import { TableArea } from "../tables/TableArea";
+import { TableCompoundInterest } from "../tables/TableCompoundInterest";
 import { LineChartInterest } from "../lineChart/LineChartInterest";
 import { CalloutMessage } from "../callOut/CallOut";
 import { useState, useEffect } from "react";
@@ -21,6 +21,7 @@ interface FormData {
 }
 
 interface ChartData {
+  initialInvestment: number;
   year: number;
   balance: number;
   interest: number;
@@ -91,6 +92,7 @@ export const ChartCard: React.FC<Props> = () => {
         balance: Math.round(balance),
         interest: Math.round(yearlyInterest),
         contributions: Math.round(yearlyContributions),
+        initialInvestment,
       });
       setResetData(false);
     }
@@ -262,7 +264,7 @@ export const ChartCard: React.FC<Props> = () => {
           <DonutChartTemplate data={totalData} />
         </div>
         <LineChartInterest chartData={chartData} />
-        <TableArea chartData={chartData} />
+        <TableCompoundInterest chartData={chartData} />
       </Card>
     </div>
   );

@@ -14,12 +14,10 @@ interface Props {
   chartData: ChartData[];
 }
 
-export const LineChartInterest: React.FC<Props> = ({ chartData }) => {
+export const LineChartPresentValue: React.FC<Props> = ({ chartData }) => {
   const data = chartData.map((item) => ({
     date: `Año ${item.year}`,
     "Retorno Total": item.balance,
-    "Contribuciones Totales":
-      item.contributions * item.year + item.initialInvestment,
   }));
 
   return (

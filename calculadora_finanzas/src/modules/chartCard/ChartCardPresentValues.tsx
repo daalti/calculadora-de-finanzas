@@ -5,7 +5,7 @@ import { Button } from "../../components/tremor/Button";
 import { DonutChartTemplate } from "../../components/donutChartTemplate/DonutChartTemplate";
 import { TableDonut } from "../tables/TableDonut";
 import { TableArea } from "../tables/TableArea";
-import { LineChartInterest } from "../lineChart/LineChartInterest";
+import { LineChartPresentValue } from "../lineChart/LineChartPresentValue";
 import { useState, useEffect } from "react";
 import { CalloutMessage } from "../callOut/CallOut";
 import "./ChartCard.css";
@@ -23,6 +23,7 @@ interface ChartData {
   balance: number;
   interest: number;
   contributions: number;
+  initialInvestment: number;
 }
 
 interface TotalData {
@@ -63,6 +64,7 @@ export const ChartCardPresentValue: React.FC<Props> = () => {
         balance: Math.round(valueAtYear),
         interest: Math.round(yearlyInterest),
         contributions: Math.round(presentValue),
+        initialInvestment: Math.round(presentValue),
       });
     }
     setResetData(false);
@@ -205,7 +207,7 @@ export const ChartCardPresentValue: React.FC<Props> = () => {
           </div>
           <DonutChartTemplate data={totalData} />
         </div>
-        <LineChartInterest chartData={chartData} />
+        <LineChartPresentValue chartData={chartData} />
         <TableArea chartData={chartData} />
       </Card>
     </div>

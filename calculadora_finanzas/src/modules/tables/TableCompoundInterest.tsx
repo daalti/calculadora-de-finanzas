@@ -20,7 +20,7 @@ interface Props {
   chartData: ChartData[];
 }
 
-export const TableArea: React.FC<Props> = ({ chartData }) => {
+export const TableCompoundInterest: React.FC<Props> = ({ chartData }) => {
   const formatCurrency = (value: number) => {
     return value.toLocaleString("es-ES", {
       style: "currency",
@@ -28,6 +28,12 @@ export const TableArea: React.FC<Props> = ({ chartData }) => {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     });
+  };
+
+  const getCumulativeContributions = (index: number): number => {
+    return chartData
+      .slice(0, index + 1)
+      .reduce((sum, item) => sum + item.contributions, 0);
   };
 
   return (
@@ -43,18 +49,14 @@ export const TableArea: React.FC<Props> = ({ chartData }) => {
         </TableHead>
         <TableBody>
           {chartData.map((item, index) => (
-            <TableRow key={index}>
-              <TableCell className="text-center" style={{ fontWeight: "700" }}>
-                {item.year}
-              </TableCell>
-              <TableCell className="text-right">
-                {formatCurrency(item.balance)}
-              </TableCell>
-              <TableCell className="text-right">
-                {formatCurrency(item.balance - item.contributions)}
-              </TableCell>
-              <TableCell className="text-right">
-                {formatCurrency(item.contributions)}
+            <TableRow key={item.year}>
+              <TableCell>{item.year}</TableCell>
+              <TableCell>{formatCurrency(item.balance)}</TableCell>
+              <TableCell>{formatCurrency(item.interest)}</TableCell>
+              <TableCell>
+                {formatCurrency(
+                  getCumulativeContributions(index) + item.initialInvestment
+                )}
               </TableCell>
             </TableRow>
           ))}

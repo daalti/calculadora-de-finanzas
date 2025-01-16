@@ -1,4 +1,6 @@
-# Introducción al Venture Capital
+# Venture Capital
+
+![Venture Capital](/src/assets/images/glosary/venture-capital-1.webp)
 
 El **Venture Capital** (capital de riesgo) es un tipo de inversión enfocada en empresas de reciente creación, conocidas como startups, que poseen un alto potencial de crecimiento. Estas inversiones suelen caracterizarse por un alto nivel de riesgo debido a la incertidumbre inherente a los proyectos iniciales.
 
@@ -34,13 +36,6 @@ A pesar de las diferencias entre el Venture Capital y las inversiones en compañ
 3. **Incertidumbre y riesgo**:
    - A diferencia de las compañías consolidadas, las startups enfrentan incertidumbre en aspectos como la aceptación del mercado, regulaciones y capacidad operativa.
    - Esto hace que los inversores de Venture Capital se enfoquen en estrategias diversificadas y en obtener participaciones significativas en las startups más prometedoras.
-
-## Relación con el curso
-
-El curso mencionado en el documento, centrado principalmente en compañías públicas, proporciona conocimientos financieros útiles para el ámbito del Venture Capital. Algunos puntos relevantes:
-
-- **Modelización financiera**: Las herramientas explicadas en el curso, como la valoración de empresas, son aplicables al análisis de startups.
-- **Utilidad transversal**: Los conceptos aprendidos permiten una comprensión global de diferentes tipos de inversiones, incluyendo el Venture Capital.
 
 ## Conclusión
 
