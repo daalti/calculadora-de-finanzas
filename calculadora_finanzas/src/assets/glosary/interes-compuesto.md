@@ -1,3 +1,5 @@
+# Interés compuesto
+
 # ¿Qué es el interés compuesto?
 
 El interés compuesto es un concepto financiero fundamental que se refiere al proceso mediante el cual los intereses generados por un capital inicial se reinvierten, de modo que en el siguiente período los intereses se calculan no solo sobre el capital inicial, sino también sobre los intereses acumulados anteriormente. Este fenómeno puede hacer crecer el dinero de manera exponencial con el tiempo.

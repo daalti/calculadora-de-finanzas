@@ -39,23 +39,21 @@ export const AsideMenu: React.FC<Props> = () => {
           </ul>
         </div>
         <div>
-          <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-            Artículos de interes
-          </h3>
+          <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>Glosario</h3>
           <ul className="aside-menu-ul">
             <li>
               <Label>
-                <a href="#">Savings Goal Calculator</a>
+                <a href="/venture-capital">Venture Capital</a>
               </Label>
             </li>
             <li>
               <Label>
-                <a href="#">Required Minimum Distribution Calculator</a>
+                <a href="/interes-compuesto">Interés compuesto</a>
               </Label>
             </li>
             <li>
               <Label>
-                <a href="#">College Savings Calculator</a>
+                <a href="/tramos-irpf">Tramos IRPF</a>
               </Label>
             </li>
           </ul>

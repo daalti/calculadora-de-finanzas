@@ -7,6 +7,7 @@ import { ChartCardAverageStock } from "../../modules/chartCard/ChartCardAverageS
 import { ChartCardIRPF } from "../../modules/chartCard/ChartCardIRPF";
 import { CalloutMessage } from "../../modules/callOut/CallOut";
 import { FooterPage } from "../../modules/footer/Footer";
+
 import "./CalculatorPageTemplate.css";
 
 interface Props {

@@ -110,6 +110,62 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
                 {children}
               </li>
             ),
+            table: ({ children }) => (
+              <div style={{ overflowX: "auto", margin: "2rem 0" }}>
+                <table
+                  style={{
+                    width: "100%",
+                    borderCollapse: "collapse",
+                    border: "1px solid #e5e7eb",
+                  }}
+                >
+                  {children}
+                </table>
+              </div>
+            ),
+            thead: ({ children }) => (
+              <thead
+                style={{
+                  backgroundColor: "#f3f4f6",
+                  borderBottom: "2px solid #e5e7eb",
+                }}
+              >
+                {children}
+              </thead>
+            ),
+            tr: ({ children }) => (
+              <tr
+                style={{
+                  borderBottom: "1px solid #e5e7eb",
+                }}
+              >
+                {children}
+              </tr>
+            ),
+            td: ({ children }) => {
+              return (
+                <td
+                  style={{
+                    padding: "12px 16px",
+                    borderBottom: "1px solid #e5e7eb",
+                    textAlign: "right",
+                  }}
+                >
+                  {children}
+                </td>
+              );
+            },
+            th: ({ children }) => (
+              <th
+                style={{
+                  padding: "12px 16px",
+                  textAlign: "right",
+                  fontWeight: 600,
+                }}
+              >
+                {children}
+              </th>
+            ),
           }}
         >
           {content}

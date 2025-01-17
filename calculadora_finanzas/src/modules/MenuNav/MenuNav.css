@@ -76,3 +76,15 @@
 .tab-menu-navigation li:hover .dropdown-menu-content {
   display: block;
 }
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-hover-area {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  top: 100%;
+  left: 0;
+}

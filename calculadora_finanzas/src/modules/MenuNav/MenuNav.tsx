@@ -1,10 +1,5 @@
 import logo from "../../assets/logo/logo.svg";
 import "./MenuNav.css";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-} from "../../components/tremor/DropDownMenu";
-import { DropdownMenuHero } from "../../components/drowDownMenuHero/DropDownMenuHero";
 
 export const MenuNav = () => (
   <header className="compound-interest-header">
@@ -15,24 +10,14 @@ export const MenuNav = () => (
         </div>
         <ul className="tab-menu-navigation">
           <li>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <a href="#" className="tab-menu-link">
-                  Calculadoras
-                </a>
-              </DropdownMenuTrigger>
-              <DropdownMenuHero />
-            </DropdownMenu>
+            <a href="#" className="tab-menu-link">
+              Calculadoras
+            </a>
           </li>
           <li>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <a href="#" className="tab-menu-link">
-                  Glosario
-                </a>
-              </DropdownMenuTrigger>
-              <DropdownMenuHero />
-            </DropdownMenu>
+            <a href="#" className="tab-menu-link">
+              Glosario
+            </a>
           </li>
           <li>
             <a href="#" className="tab-menu-link">

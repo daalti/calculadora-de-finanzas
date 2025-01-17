@@ -74,11 +74,14 @@ const Callout = React.forwardRef<HTMLDivElement, CalloutProps>(
           ) : (
             Icon
           )}
-          <span className={cx("font-semibold")}>{title}</span>
+          <span
+            className={cx("font-semibold")}
+            style={{ marginBottom: "10px" }}
+          >
+            {title}
+          </span>
         </div>
-        <div className={cx("overflow-y-auto", children ? "mt-2" : "")}>
-          {children}
-        </div>
+        <div>{children}</div>
       </div>
     );
   }

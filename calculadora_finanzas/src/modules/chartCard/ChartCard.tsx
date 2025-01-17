@@ -3,6 +3,7 @@ import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
 import { Button } from "../../components/tremor/Button";
 import { DonutChartTemplate } from "../../components/donutChartTemplate/DonutChartTemplate";
+import { AccordionTemplate } from "../../components/accordion/AccordionTemplate";
 import { TableDonut } from "../tables/TableDonut";
 import { TableCompoundInterest } from "../tables/TableCompoundInterest";
 import { LineChartInterest } from "../lineChart/LineChartInterest";
@@ -266,6 +267,7 @@ export const ChartCard: React.FC<Props> = () => {
         <LineChartInterest chartData={chartData} />
         <TableCompoundInterest chartData={chartData} />
       </Card>
+      <AccordionTemplate />
     </div>
   );
 };
