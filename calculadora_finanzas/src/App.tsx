@@ -4,6 +4,7 @@ import { PresentValue } from "./pages/calculator/PresentValue";
 import { ReturnRate } from "./pages/calculator/ReturnRate";
 import { AverageStock } from "./pages/calculator/AverageStock";
 import { IRPF } from "./pages/calculator/IRPF";
+import { CalculatorInitial } from "./pages/calculator/CalculatorInitial";
 import { GlosarioFileTemplate } from "./pages/glosario/GlosarioFileTemplate";
 import { Routes, Route } from "react-router-dom";
 import { getGlossaryTerms } from "./utils/getGlossaryTerms";
@@ -14,6 +15,7 @@ function App(): JSX.Element {
   return (
     <Routes>
       <Route path="/" element={<CompoundInterest />} />
+      <Route path="/calculadoras" element={<CalculatorInitial />} />
       <Route path="/valor-presente" element={<PresentValue />} />
       <Route path="/tasa-de-retorno" element={<ReturnRate />} />
       <Route path="/promedio-acciones" element={<AverageStock />} />

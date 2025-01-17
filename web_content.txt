@@ -1,0 +1,29 @@
+**Calculadoras
+  *Valor Presente - Check
+  *Tasa Retorno - Check
+  *Promedio Acciones- Check
+  *Interes Compuesto - Check
+  *IRPF 2025 - (esto mirar para ver si pongo sueldo neto o bruto) 
+
+**Glosario
+ *Interes Compuesto
+ *Tramos IRPF
+ *Cotizaciones seguridad social
+ *Deducciones IRPF
+ *Informe 10K
+ *EBIT
+ *EBITDA
+ *Bono
+
+**Tesis
+  *Water
+
+**Blog
+  * Por que es importante el interes Compuesto
+  * Como se calcula de salario bruto a neto
+  * Cuanto dinero paga el empresario por Tesis
+  * SMI
+  * Explotacion
+
+**Libros
+ *Solo una entrada con una serie de libros de bolsa y listo.

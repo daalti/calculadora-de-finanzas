@@ -1,0 +1,27 @@
+{
+  "ValorPresente": {
+    "titulo": "Valor Presente",
+    "descripcion": "El valor presente es el valor actual de una serie de flujos de efectivo futuros, descontados a una tasa de interés apropiada. Es decir, es el valor de un determinado monto de dinero en el presente, que se recibirá o pagará en el futuro.",
+    "link": "/valor-presente"
+  },
+  "TasaDeRetorno": {
+    "titulo": "Tasa de Retorno",
+    "descripcion": "La tasa de retorno es el rendimiento que se obtiene de una inversión o de un proyecto. Es decir, es el porcentaje de ganancia o pérdida que se obtiene de una inversión o de un proyecto.",
+    "link": "/tasa-de-retorno"
+  },
+  "InteresCompuesto": {
+    "titulo": "Interés Compuesto",
+    "descripcion": "El interés compuesto es el interés que se calcula sobre el capital inicial y sobre los intereses acumulados en periodos anteriores. Es decir, es el interés que se paga o se recibe sobre el capital inicial y sobre los intereses acumulados en periodos anteriores.",
+    "link": "/"
+  },
+  "IRPF": {
+    "titulo": "IRPF 2025",
+    "descripcion": "El IRPF es el impuesto sobre la renta de las personas físicas. Es decir, es el impuesto que grava la renta de las personas físicas.",
+    "link": "/calculadora-IRPF-2025"
+  },
+  "PromedioAcciones": {
+    "titulo": "Promedio de Acciones",
+    "descripcion": "El promedio de acciones es el promedio de las acciones de una empresa en un periodo determinado. Es decir, es el promedio de las acciones de una empresa en un periodo determinado.",
+    "link": "/promedio-acciones"
+  }
+}

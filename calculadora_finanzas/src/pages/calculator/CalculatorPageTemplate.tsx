@@ -5,6 +5,7 @@ import { ChartCardPresentValue } from "../../modules/chartCard/ChartCardPresentV
 import { ChartCardReturnRate } from "../../modules/chartCard/ChartCardReturnRate";
 import { ChartCardAverageStock } from "../../modules/chartCard/ChartCardAverageStock";
 import { ChartCardIRPF } from "../../modules/chartCard/ChartCardIRPF";
+import { ChartCardInitial } from "../../modules/chartCard/ChartCardInitial";
 import { CalloutMessage } from "../../modules/callOut/CallOut";
 import { FooterPage } from "../../modules/footer/Footer";
 
@@ -18,7 +19,8 @@ interface Props {
     | "presentValue"
     | "returnRate"
     | "averageStock"
-    | "IRPF";
+    | "IRPF"
+    | "initial";
 }
 
 export const CalculatorPageTemplate: React.FC<Props> = ({
@@ -39,6 +41,7 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
             {type === "returnRate" ? <ChartCardReturnRate /> : null}
             {type === "averageStock" ? <ChartCardAverageStock /> : null}
             {type === "IRPF" ? <ChartCardIRPF /> : null}
+            {type === "initial" ? <ChartCardInitial /> : null}
           </main>
           <AsideMenu />
         </div>
