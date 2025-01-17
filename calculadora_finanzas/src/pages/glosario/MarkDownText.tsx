@@ -46,7 +46,7 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
               return (
                 <p
                   style={{
-                    fontSize: "0.875rem",
+                    fontSize: "1rem",
                     lineHeight: "1.5",
                     marginBottom: "1rem",
                   }}
