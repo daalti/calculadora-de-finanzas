@@ -35,6 +35,26 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
           remarkPlugins={[remarkGfm, remarkMath, remarkGfm]}
           rehypePlugins={[rehypeRaw, rehypeKatex]}
           components={{
+            p: ({ node, children }) => {
+              // Check if the paragraph contains an image
+              const hasImage = node?.children?.some(
+                (child: any) => child.tagName === "img"
+              );
+              if (hasImage) {
+                return <>{children}</>;
+              }
+              return (
+                <p
+                  style={{
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {children}
+                </p>
+              );
+            },
             img: ({ src, alt }) => (
               <figure
                 style={{
