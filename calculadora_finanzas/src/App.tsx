@@ -6,13 +6,20 @@ import { AverageStock } from "./pages/calculator/AverageStock";
 import { IRPF } from "./pages/calculator/IRPF";
 import { CalculatorInitial } from "./pages/calculator/CalculatorInitial";
 import { GlosarioFileTemplate } from "./pages/glosario/GlosarioFileTemplate";
+import { BlogFileTemplate } from "./pages/blog/BlogFileTemplate";
 import { Routes, Route } from "react-router-dom";
-import { getGlossaryTerms, getTesisFiles } from "./utils/getGlossaryTerms";
+import {
+  getGlossaryTerms,
+  getTesisFiles,
+  getBlogsFiles,
+} from "./utils/getGlossaryTerms";
 import { TesisFileTemplate } from "./pages/tesis/tesisFileTemplate";
 
 function App(): JSX.Element {
   const glossaryTerms = getGlossaryTerms();
   const TesisFiles = getTesisFiles();
+  const BlogsFiles = getBlogsFiles();
+  console.log(BlogsFiles);
 
   return (
     <Routes>
@@ -34,6 +41,13 @@ function App(): JSX.Element {
           key={term}
           path={`/${term}`}
           element={<GlosarioFileTemplate title={term} />}
+        />
+      ))}
+      {BlogsFiles.map((file) => (
+        <Route
+          key={file}
+          path={`/${file}`}
+          element={<BlogFileTemplate title={file} />}
         />
       ))}
     </Routes>

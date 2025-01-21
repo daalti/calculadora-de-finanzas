@@ -5,25 +5,25 @@
   *Interes Compuesto - Check
   *IRPF 2025 - (esto mirar para ver si pongo sueldo neto o bruto) 
 
-**Glosario
- *Interes Compuesto
- *Tramos IRPF
- *Cotizaciones seguridad social
- *Deducciones IRPF
- *Informe 10K
- *EBIT
- *EBITDA
- *Bono
+**Glosario - Añadir fotos en general
+ *Interes Compuesto - Check
+ *Tramos IRPF - Check (Tal vez mejorar los numeros de las tablas)
+ *Cotizaciones seguridad social - Check 
+ *Deducciones IRPF - Check
+ *Informe 10K - Check
+ *EBIT - Check
+ *EBITDA - Check
+ *Bono - Check
 
 **Tesis
-  *Water
+  *Water - A medias
 
 **Blog
   * Por que es importante el interes Compuesto
   * Como se calcula de salario bruto a neto
-  * Cuanto dinero paga el empresario por Tesis
-  * SMI
-  * Explotacion
+  * Cuanto dinero paga el empresario por ti
+  * SMI - Check
+  * Explotacion - Check 
 
 **Libros
  *Solo una entrada con una serie de libros de bolsa y listo.

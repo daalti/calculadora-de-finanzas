@@ -5,19 +5,18 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-import rehypeSlug from "rehype-slug";
 import "katex/dist/katex.min.css";
-import "./MarkDownText.css";
+import "./MarkDownTextBlog.css";
 
 interface Props {
   title: string;
 }
 
-export const MarkDownText: React.FC<Props> = ({ title }) => {
+export const MarkDownTextBlog: React.FC<Props> = ({ title }) => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`/src/assets/glosary/${title.toLowerCase()}.md`)
+    fetch(`/src/assets/blogs/${title.toLowerCase()}.md`)
       .then((res) => res.text())
       .then((text) => {
         // Replace image path in markdown
@@ -33,10 +32,11 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
     <div className="venture-capital-container">
       <Card className="venture-capital-card">
         <ReactMarkdown
-          remarkPlugins={[remarkGfm, remarkMath]}
-          rehypePlugins={[rehypeRaw, rehypeKatex, rehypeSlug]}
+          remarkPlugins={[remarkGfm, remarkMath, remarkGfm]}
+          rehypePlugins={[rehypeRaw, rehypeKatex]}
           components={{
             p: ({ node, children }) => {
+              // Check if the paragraph contains an image
               const hasImage = node?.children?.some(
                 (child: any) => child.tagName === "img"
               );
@@ -131,17 +131,10 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
               </li>
             ),
             table: ({ children }) => (
-              <div
-                style={{
-                  overflowX: "auto",
-                  margin: "2rem 0",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
+              <div style={{ overflowX: "auto", margin: "2rem 0" }}>
                 <table
                   style={{
-                    width: "70%",
+                    width: "100%",
                     borderCollapse: "collapse",
                     border: "1px solid #e5e7eb",
                   }}
@@ -153,8 +146,7 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
             thead: ({ children }) => (
               <thead
                 style={{
-                  backgroundColor: "#3B82F6",
-                  color: "#fff",
+                  backgroundColor: "#f3f4f6",
                   borderBottom: "2px solid #e5e7eb",
                 }}
               >
