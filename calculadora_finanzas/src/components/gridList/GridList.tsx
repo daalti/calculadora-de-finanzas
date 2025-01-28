@@ -44,7 +44,7 @@ const data = [
 
 export const GridList = () => {
   return (
-    <div style={{ maxWidth: "1000px" }}>
+    <div style={{ maxWidth: "900px" }}>
       <dl className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {data.map((item) => (
           <Card key={item.name} className="flex flex-col justify-between">

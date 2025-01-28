@@ -1,27 +1,37 @@
 {
   "ValorPresente": {
-    "titulo": "Valor Presente",
+    "titulo": "Calculadora Valor Presente",
     "descripcion": "El valor presente es el valor actual de una serie de flujos de efectivo futuros, descontados a una tasa de interés apropiada. Es decir, es el valor de un determinado monto de dinero en el presente, que se recibirá o pagará en el futuro.",
     "link": "/valor-presente"
   },
   "TasaDeRetorno": {
-    "titulo": "Tasa de Retorno",
+    "titulo": "Calculadora Tasa de Retorno",
     "descripcion": "La tasa de retorno es el rendimiento que se obtiene de una inversión o de un proyecto. Es decir, es el porcentaje de ganancia o pérdida que se obtiene de una inversión o de un proyecto.",
     "link": "/tasa-de-retorno"
   },
   "InteresCompuesto": {
-    "titulo": "Interés Compuesto",
+    "titulo": "Calculadora Interés Compuesto",
     "descripcion": "El interés compuesto es el interés que se calcula sobre el capital inicial y sobre los intereses acumulados en periodos anteriores. Es decir, es el interés que se paga o se recibe sobre el capital inicial y sobre los intereses acumulados en periodos anteriores.",
     "link": "/"
   },
   "IRPF": {
-    "titulo": "IRPF 2025",
+    "titulo": "Calculadora IRPF 2025",
     "descripcion": "El IRPF es el impuesto sobre la renta de las personas físicas. Es decir, es el impuesto que grava la renta de las personas físicas.",
     "link": "/calculadora-IRPF-2025"
   },
   "PromedioAcciones": {
-    "titulo": "Promedio de Acciones",
+    "titulo": "Calculadora Promedio de Acciones",
     "descripcion": "El promedio de acciones es el promedio de las acciones de una empresa en un periodo determinado. Es decir, es el promedio de las acciones de una empresa en un periodo determinado.",
     "link": "/promedio-acciones"
+  },
+  "ComparacionIRPFEntreComunidades": {
+    "titulo": "Calculadora Comparación IRPF entre Comunidades",
+    "descripcion": "Esta herramienta permite comparar las diferencias en el IRPF entre distintas comunidades autónomas en España. Es decir, analiza las variaciones en la carga fiscal según la ubicación.",
+    "link": "/comparacion-irpf-comunidades"
+  },
+  "CosteLaboral": {
+    "titulo": "Calculadora Coste Laboral",
+    "descripcion": "El coste laboral es el gasto total que un empleador debe afrontar por cada empleado, incluyendo salarios, seguridad social, beneficios y otros costos relacionados.",
+    "link": "/coste-laboral"
   }
 }

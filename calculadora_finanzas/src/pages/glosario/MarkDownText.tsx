@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Card } from "../../components/tremor/Card";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -31,7 +30,7 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
 
   return (
     <div className="venture-capital-container">
-      <Card className="venture-capital-card">
+      <div className="venture-capital-card">
         <ReactMarkdown
           remarkPlugins={[remarkGfm, remarkMath]}
           rehypePlugins={[rehypeRaw, rehypeKatex, rehypeSlug]}
@@ -198,7 +197,7 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
         >
           {content}
         </ReactMarkdown>
-      </Card>
+      </div>
     </div>
   );
 };

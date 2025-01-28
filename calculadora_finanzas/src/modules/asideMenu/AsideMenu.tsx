@@ -1,4 +1,3 @@
-import { Card } from "../../components/tremor/Card";
 import { Label } from "../../components/tremor/Label";
 import { Link } from "react-router-dom";
 import "./AsideMenu.css";
@@ -7,8 +6,8 @@ interface Props {}
 
 export const AsideMenu: React.FC<Props> = () => {
   return (
-    <aside>
-      <Card className="aside-menu">
+    <aside className="aside-container">
+      <div className="aside-menu">
         <div>
           <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
             Calculadoras
@@ -58,7 +57,7 @@ export const AsideMenu: React.FC<Props> = () => {
             </li>
           </ul>
         </div>
-      </Card>
+      </div>
     </aside>
   );
 };

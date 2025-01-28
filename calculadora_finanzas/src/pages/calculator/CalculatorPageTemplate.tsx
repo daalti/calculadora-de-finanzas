@@ -6,6 +6,10 @@ import { ChartCardReturnRate } from "../../modules/chartCard/ChartCardReturnRate
 import { ChartCardAverageStock } from "../../modules/chartCard/ChartCardAverageStock";
 import { ChartCardIRPF } from "../../modules/chartCard/ChartCardIRPF";
 import { ChartCardInitial } from "../../modules/chartCard/ChartCardInitial";
+import { ChartCardIRPFComparison } from "../../modules/chartCard/ChartCardIRPFComparison";
+import { ChartCardLaboralCost } from "../../modules/chartCard/ChartCardLaboralCost";
+import { ChartBlogInitial } from "../../modules/chartCard/ChartBlogInitial";
+import { ChartGlosaryInitial } from "../../modules/chartCard/ChartGlosaryInitial";
 import { CalloutMessage } from "../../modules/callOut/CallOut";
 import { FooterPage } from "../../modules/footer/Footer";
 
@@ -20,7 +24,11 @@ interface Props {
     | "returnRate"
     | "averageStock"
     | "IRPF"
-    | "initial";
+    | "initial"
+    | "IRPFCA"
+    | "laboralCost"
+    | "BlogInitial"
+    | "GlosarioInitial";
 }
 
 export const CalculatorPageTemplate: React.FC<Props> = ({
@@ -33,6 +41,7 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
       <MenuNav />
       <div className="compound-interest-main">
         <div className="compound-interest-content-container">
+          <AsideMenu />
           <main className="compound-interest-content">
             <h1 className="compound-interest-title">{title}</h1>
             <CalloutMessage message={message} title={title} variant="default" />
@@ -42,8 +51,11 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
             {type === "averageStock" ? <ChartCardAverageStock /> : null}
             {type === "IRPF" ? <ChartCardIRPF /> : null}
             {type === "initial" ? <ChartCardInitial /> : null}
+            {type === "IRPFCA" ? <ChartCardIRPFComparison /> : null}
+            {type === "laboralCost" ? <ChartCardLaboralCost /> : null}
+            {type === "BlogInitial" ? <ChartBlogInitial /> : null}
+            {type === "GlosarioInitial" ? <ChartGlosaryInitial /> : null}
           </main>
-          <AsideMenu />
         </div>
       </div>
       <FooterPage />

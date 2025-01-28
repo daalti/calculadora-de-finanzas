@@ -1,0 +1,48 @@
+.irpf-card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  gap: 20px;
+}
+
+.irpf-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.label-item {
+  font-weight: 500;
+  width: 100%;
+}
+
+.input-item,
+.select-native {
+  width: 100%;
+  min-width: 200px;
+}
+
+.irpf-card-results {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}

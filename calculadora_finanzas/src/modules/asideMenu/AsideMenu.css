@@ -1,4 +1,17 @@
+.aside-container {
+  position: sticky;
+  top: 50px;
+  height: 100vh;
+  width: 300px;
+  padding: 30px;
+  overflow-y: auto;
+  border-style: solid;
+  border-color: #e5e7eb;
+  border-width: 0 2px 0 0;
+}
+
 .aside-menu {
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;

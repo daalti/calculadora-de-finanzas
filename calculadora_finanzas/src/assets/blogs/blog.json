@@ -1,0 +1,17 @@
+{
+  "ExplotacionLaboral": {
+    "titulo": "Explotación Laboral",
+    "descripcion": "La explotación laboral se refiere a situaciones en las que los trabajadores son sometidos a condiciones de trabajo injustas, como salarios bajos, jornadas excesivas o la falta de derechos laborales.",
+    "link": "/explotacion-laboral"
+  },
+  "SalarioMinimo": {
+    "titulo": "Salario Mínimo",
+    "descripcion": "El salario mínimo es la cantidad mínima de remuneración que los empleadores deben pagar a sus trabajadores por ley. Garantiza un ingreso básico para cubrir las necesidades esenciales.",
+    "link": "/salario-minimo"
+  },
+  "CalculoSalarioNeto": {
+    "titulo": "Cálculo de Salario Neto",
+    "descripcion": "El cálculo de salario neto permite determinar la cantidad real que un empleado recibe después de descontar impuestos, seguridad social y otros conceptos de su salario bruto. Es decir, es el monto final que se percibe como remuneración.",
+    "link": "/calculo-salario-neto"
+  }
+}

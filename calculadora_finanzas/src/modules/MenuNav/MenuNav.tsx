@@ -17,7 +17,7 @@ export const MenuNav = () => (
             </a>
           </li>
           <li>
-            <a href="#" className="tab-menu-link">
+            <a href="/glosario" className="tab-menu-link">
               Glosario
             </a>
           </li>
@@ -27,7 +27,7 @@ export const MenuNav = () => (
             </a>
           </li>
           <li>
-            <a href="#" className="tab-menu-link">
+            <a href="/blogs" className="tab-menu-link">
               Blog
             </a>
           </li>

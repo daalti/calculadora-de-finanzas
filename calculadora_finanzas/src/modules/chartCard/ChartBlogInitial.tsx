@@ -1,31 +1,31 @@
 import { Card } from "../../components/tremor/Card";
-import calculatorData from "../../assets/calculator/calculator.json";
+import blogData from "../../assets/blogs/blog.json";
 import { useNavigate } from "react-router-dom";
-import "./ChartCardInitial.css";
+import "./ChartBlogInitial.css";
 
 interface Props {}
 
-export const ChartCardInitial: React.FC<Props> = () => {
+export const ChartBlogInitial: React.FC<Props> = () => {
   const navigate = useNavigate();
 
   return (
     <div className="compound-interest-card-container">
-      {Object.values(calculatorData).map((calculator, index) => (
+      {Object.values(blogData).map((data, index) => (
         <Card
-          key={calculator.titulo}
+          key={data.titulo}
           className="compound-interest-card"
-          onClick={() => navigate(calculator.link)}
+          onClick={() => navigate(data.link)}
           style={{ cursor: "pointer" }}
         >
           <div className="calculator-card-content">
             <img
-              src={`/src/assets/calculator/images/calculator-${index + 1}.webp`}
-              alt={calculator.titulo}
+              src={`/src/assets/blogs/images/blog-${index + 1}.webp`}
+              alt={data.titulo}
               className="calculator-card-image"
             />
             <div className="calculator-card-text">
-              <h2>{calculator.titulo}</h2>
-              <p>{calculator.descripcion}</p>
+              <h2>{data.titulo}</h2>
+              <p>{data.descripcion}</p>
             </div>
           </div>
         </Card>

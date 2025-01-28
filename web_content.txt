@@ -19,9 +19,7 @@
   *Water - A medias
 
 **Blog
-  * Por que es importante el interes Compuesto
   * Como se calcula de salario bruto a neto
-  * Cuanto dinero paga el empresario por ti
   * SMI - Check
   * Explotacion - Check 
 

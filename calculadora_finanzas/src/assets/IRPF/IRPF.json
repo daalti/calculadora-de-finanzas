@@ -710,6 +710,21 @@
         "General": 1200,
         "Especial": 2400
       }
+    },
+    {
+      "Tipo": "Numero Hijos Menores 25",
+      "Importes": {
+        "1": 2400,
+        "2": 2700,
+        "3": 4000,
+        "4+": 4500
+      }
+    },
+    {
+      "Tipo": "Numero Hijos Menores 3",
+      "Importes": {
+        "Todos": 2800
+      }
     }
   ]
 }
