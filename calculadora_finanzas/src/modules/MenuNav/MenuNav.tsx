@@ -12,6 +12,16 @@ export const MenuNav = () => (
         </div>
         <ul className="tab-menu-navigation">
           <li>
+            <a href="/blogs" className="tab-menu-link">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="/tesis" className="tab-menu-link">
+              Tesis de Inversión
+            </a>
+          </li>
+          <li>
             <a href="/calculadoras" className="tab-menu-link">
               Calculadoras
             </a>
@@ -21,16 +31,11 @@ export const MenuNav = () => (
               Glosario
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#" className="tab-menu-link">
               Libros
             </a>
-          </li>
-          <li>
-            <a href="/blogs" className="tab-menu-link">
-              Blog
-            </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

@@ -10,6 +10,7 @@ import { ChartCardIRPFComparison } from "../../modules/chartCard/ChartCardIRPFCo
 import { ChartCardLaboralCost } from "../../modules/chartCard/ChartCardLaboralCost";
 import { ChartBlogInitial } from "../../modules/chartCard/ChartBlogInitial";
 import { ChartGlosaryInitial } from "../../modules/chartCard/ChartGlosaryInitial";
+import { ChartTesisInitial } from "../../modules/chartCard/ChartTesisInitial";
 import { CalloutMessage } from "../../modules/callOut/CallOut";
 import { FooterPage } from "../../modules/footer/Footer";
 
@@ -28,6 +29,7 @@ interface Props {
     | "IRPFCA"
     | "laboralCost"
     | "BlogInitial"
+    | "TesisInitial"
     | "GlosarioInitial";
 }
 
@@ -54,6 +56,7 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
             {type === "IRPFCA" ? <ChartCardIRPFComparison /> : null}
             {type === "laboralCost" ? <ChartCardLaboralCost /> : null}
             {type === "BlogInitial" ? <ChartBlogInitial /> : null}
+            {type === "TesisInitial" ? <ChartTesisInitial /> : null}
             {type === "GlosarioInitial" ? <ChartGlosaryInitial /> : null}
           </main>
         </div>

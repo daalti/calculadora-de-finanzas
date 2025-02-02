@@ -7,6 +7,7 @@ import { IRPF } from "./pages/calculator/IRPF";
 import { CalculatorInitial } from "./pages/calculator/CalculatorInitial";
 import { BlogInitial } from "./pages/blog/BlogInitial";
 import { GlosarioInitial } from "./pages/glosario/GlosarioInitial";
+import { TesisInitial } from "./pages/tesis/TesisInitial";
 import { GlosarioFileTemplate } from "./pages/glosario/GlosarioFileTemplate";
 import { BlogFileTemplate } from "./pages/blog/BlogFileTemplate";
 import { IRPFComparison } from "./pages/calculator/IRPFComparison";
@@ -31,6 +32,7 @@ function App(): JSX.Element {
       <Route path="/calculadoras" element={<CalculatorInitial />} />
       <Route path="/blogs" element={<BlogInitial />} />
       <Route path="/glosario" element={<GlosarioInitial />} />
+      <Route path="/tesis" element={<TesisInitial />} />
       <Route path="/valor-presente" element={<PresentValue />} />
       <Route path="/tasa-de-retorno" element={<ReturnRate />} />
       <Route path="/promedio-acciones" element={<AverageStock />} />

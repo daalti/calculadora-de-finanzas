@@ -2,12 +2,12 @@ import { CalculatorPageTemplate } from "./CalculatorPageTemplate";
 
 const RETURN_RATE_MESSAGE = (
   <>
-    La tasa de retorno (o CAGR, por sus siglas en inglés, Compound Annual Growth
-    Rate) mide el crecimiento promedio anual de una inversión durante un periodo
-    de tiempo, teniendo en cuenta el efecto del interés compuesto. En este caso,
-    se utiliza como una herramienta clave para comparar las diferencias en la
-    carga fiscal entre las comunidades autónomas y evaluar su impacto en la
-    rentabilidad neta.
+    La comparación del IRPF entre Comunidades Autónomas se refiere al análisis
+    de las diferencias en la tributación del Impuesto sobre la Renta de las
+    Personas Físicas que aplican las distintas regiones de España. Estas
+    variaciones pueden afectar tanto las escalas impositivas como las
+    deducciones y bonificaciones, modificando la carga fiscal para los
+    contribuyentes en cada comunidad.
   </>
 );
 

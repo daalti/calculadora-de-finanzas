@@ -2,10 +2,10 @@ import { CalculatorPageTemplate } from "./CalculatorPageTemplate";
 
 const RETURN_RATE_MESSAGE = (
   <>
-    La tasa de retorno (o CAGR, por sus siglas en inglés, Compound Annual Growth
-    Rate) mide el crecimiento promedio anual de una inversión durante un periodo
-    de tiempo, teniendo en cuenta el efecto del interés compuesto. Es clave para
-    comparar el rendimiento de diferentes inversiones y evaluar su rentabilidad.
+    El IRPF (Impuesto sobre la Renta de las Personas Físicas) es un tributo que
+    grava la renta obtenida por los ciudadanos, incluyendo ingresos del trabajo,
+    ganancias patrimoniales y otros rendimientos. Es uno de los principales
+    impuestos que se aplican a nivel personal en muchos países de habla hispana.
   </>
 );
 

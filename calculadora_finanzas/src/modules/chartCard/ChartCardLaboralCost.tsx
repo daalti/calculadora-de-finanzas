@@ -4,7 +4,7 @@ import { Button } from "../../components/tremor/Button";
 import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
 import { DonutChart } from "../../components/tremor/DonutChart";
-
+import { AccordionLaboralCost } from "../../components/accordion/AccordionLaboralCost";
 import { CalloutMessage } from "../callOut/CallOut";
 import IRPFData from "../../assets/IRPF/IRPF.json";
 import "./ChartCardLaboralCost.css";
@@ -367,6 +367,7 @@ export const ChartCardLaboralCost: React.FC = () => {
           />
         </div>
       </Card>
+      <AccordionLaboralCost />
     </div>
   );
 };

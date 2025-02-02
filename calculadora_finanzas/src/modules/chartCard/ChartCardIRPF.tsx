@@ -4,6 +4,7 @@ import { Button } from "../../components/tremor/Button";
 import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
 import { DonutChart } from "../../components/tremor/DonutChart";
+import { AccordionIRPF } from "../../components/accordion/AccordionIRPF";
 import {
   Accordion,
   AccordionContent,
@@ -681,6 +682,7 @@ export const ChartCardIRPF: React.FC = () => {
           />
         </div>
       </Card>
+      <AccordionIRPF />
     </div>
   );
 };

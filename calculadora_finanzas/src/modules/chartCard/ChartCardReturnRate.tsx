@@ -4,6 +4,7 @@ import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
 import { Button } from "../../components/tremor/Button";
 import { CalloutMessage } from "../callOut/CallOut";
+import { AccordionReturnRate } from "../../components/accordion/AccordionReturnRate";
 import "./ChartCard.css";
 
 interface FormData {
@@ -124,6 +125,7 @@ export const ChartCardReturnRate: React.FC = () => {
           variant="success"
         />
       </Card>
+      <AccordionReturnRate />
     </div>
   );
 };

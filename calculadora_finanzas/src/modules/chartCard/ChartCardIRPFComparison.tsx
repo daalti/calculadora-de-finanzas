@@ -4,6 +4,7 @@ import { Button } from "../../components/tremor/Button";
 import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
 import { BarChartIRPFComparison } from "../barChart/barChart";
+import { AccordionIRPFComparisson } from "../../components/accordion/AccordionIRPFComparisson";
 import {
   Accordion,
   AccordionContent,
@@ -623,6 +624,7 @@ export const ChartCardIRPFComparison: React.FC = () => {
 
         <BarChartIRPFComparison data={comparisonData} />
       </Card>
+      <AccordionIRPFComparisson />
     </div>
   );
 };

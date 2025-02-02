@@ -27,7 +27,7 @@
   "ComparacionIRPFEntreComunidades": {
     "titulo": "Calculadora Comparación IRPF entre Comunidades",
     "descripcion": "Esta herramienta permite comparar las diferencias en el IRPF entre distintas comunidades autónomas en España. Es decir, analiza las variaciones en la carga fiscal según la ubicación.",
-    "link": "/comparacion-irpf-comunidades"
+    "link": "/calculadora-IRPF-comparacion-comunidades-autonomas"
   },
   "CosteLaboral": {
     "titulo": "Calculadora Coste Laboral",

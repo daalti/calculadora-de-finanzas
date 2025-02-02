@@ -6,6 +6,7 @@ import { DonutChartTemplate } from "../../components/donutChartTemplate/DonutCha
 import { TableDonut } from "../tables/TableDonut";
 import { TableArea } from "../tables/TableArea";
 import { LineChartPresentValue } from "../lineChart/LineChartPresentValue";
+import { AccordionPresentValue } from "../../components/accordion/AccordionPresentValue";
 import { useState, useEffect } from "react";
 import { CalloutMessage } from "../callOut/CallOut";
 import "./ChartCard.css";
@@ -210,6 +211,7 @@ export const ChartCardPresentValue: React.FC<Props> = () => {
         <LineChartPresentValue chartData={chartData} />
         <TableArea chartData={chartData} />
       </Card>
+      <AccordionPresentValue />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { AddStock } from "./addStock/AddStock";
 import { CalloutMessage } from "../callOut/CallOut";
 import { Input } from "../../components/tremor/Input";
 import { Label } from "../../components/tremor/Label";
+import { AccordionAverageStock } from "../../components/accordion/AccordionAverageStock";
 import "./ChartCardAverageStock.css";
 
 interface StockData {
@@ -166,6 +167,7 @@ export const ChartCardAverageStock: React.FC = () => {
           variant="success"
         />
       </Card>
+      <AccordionAverageStock />
     </div>
   );
 };

@@ -4,6 +4,7 @@
   *Promedio Acciones- Check
   *Interes Compuesto - Check
   *IRPF 2025 - (esto mirar para ver si pongo sueldo neto o bruto) 
+  * Coste laboral- Mirarlo
 
 **Glosario - Añadir fotos en general
  *Interes Compuesto - Check
