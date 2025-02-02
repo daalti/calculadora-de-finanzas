@@ -18,7 +18,7 @@ export const AccordionTemplate = ({ items }: AccordionTemplateProps) => (
   <Accordion
     type="multiple"
     className="mx-auto mt-3 max-w-sm"
-    style={{ maxWidth: "1000px", width: "100%" }}
+    style={{ maxWidth: "1000px", width: "100%", marginBottom: "100px" }}
   >
     {items.map((item, index) => (
       <AccordionItem key={index} value={`item-${index + 1}`}>

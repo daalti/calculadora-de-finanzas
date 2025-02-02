@@ -44,7 +44,10 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
       <div className="compound-interest-main">
         <div className="compound-interest-content-container">
           <AsideMenu />
-          <main className="compound-interest-content">
+          <main
+            className="compound-interest-content"
+            style={{ maxWidth: "800px", margin: "0 auto", padding: "0 20px" }}
+          >
             <h1 className="compound-interest-title">{title}</h1>
             <CalloutMessage message={message} title={title} variant="default" />
             {type === "compoundInterest" ? <ChartCard /> : null}

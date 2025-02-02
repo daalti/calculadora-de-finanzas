@@ -12,20 +12,6 @@ export const AsideMenu: React.FC<Props> = () => {
     <aside className="aside-container">
       <div className="aside-menu">
         <div>
-          <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-            Calculadoras
-          </h3>
-          <ul className="aside-menu-ul">
-            {Object.values(calculatorData).map((calculator) => (
-              <li key={calculator.titulo}>
-                <Label>
-                  <Link to={calculator.link}>{calculator.titulo}</Link>
-                </Label>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
           <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>Blogs</h3>
           <ul className="aside-menu-ul">
             {Object.values(blogData).map((blog) => (
@@ -46,6 +32,20 @@ export const AsideMenu: React.FC<Props> = () => {
               <li key={tesis.titulo}>
                 <Label>
                   <Link to={tesis.link}>{tesis.titulo}</Link>
+                </Label>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
+            Calculadoras
+          </h3>
+          <ul className="aside-menu-ul">
+            {Object.values(calculatorData).map((calculator) => (
+              <li key={calculator.titulo}>
+                <Label>
+                  <Link to={calculator.link}>{calculator.titulo}</Link>
                 </Label>
               </li>
             ))}
