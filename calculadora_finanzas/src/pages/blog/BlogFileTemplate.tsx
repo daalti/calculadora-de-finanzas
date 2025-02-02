@@ -15,7 +15,13 @@ export const BlogFileTemplate: React.FC<Props> = ({ title }) => {
       <div className="glosario-file-template-main">
         <div className="glosario-file-template-content">
           <AsideMenu />
-          <main>
+          <main
+            style={{
+              maxWidth: "800px",
+              margin: "0 auto",
+              padding: "0 20px",
+            }}
+          >
             <MarkDownTextBlog title={title} />
           </main>
         </div>
