@@ -1,0 +1,9 @@
+.nav-box-container-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .nav-box-container-mobile-menu {
+    display: block;
+  }
+}

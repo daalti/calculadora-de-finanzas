@@ -1,7 +1,7 @@
 .compound-interest-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 3;
   width: 100%;
 }
 
@@ -30,6 +30,12 @@
   flex-direction: row;
   gap: 50px;
   font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .tab-menu-navigation {
+    display: none;
+  }
 }
 
 .tab-menu-logo {
