@@ -10,6 +10,12 @@
   border-width: 0 2px 0 0;
 }
 
+@media (max-width: 1200px) {
+  .aside-container {
+    display: none;
+  }
+}
+
 .aside-menu {
   height: 100%;
   display: flex;

@@ -41,6 +41,12 @@
   gap: 100px;
 }
 
+@media (max-width: 850px) {
+  .chart-container {
+    flex-direction: column;
+  }
+}
+
 .compound-interest-card-chart {
   gap: 70px;
 }

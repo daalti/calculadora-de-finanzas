@@ -18,3 +18,9 @@
   gap: 20px;
   min-height: calc(100vh - 50px);
 }
+
+@media (max-width: 1200px) {
+  .glosario-file-template-content {
+    grid-template-columns: 1fr;
+  }
+}

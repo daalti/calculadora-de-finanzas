@@ -19,6 +19,12 @@
   min-height: calc(100vh - 50px);
 }
 
+@media (max-width: 1200px) {
+  .glosario-file-template-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .glosario-file-template-main {
   display: flex;
   flex-direction: column;
