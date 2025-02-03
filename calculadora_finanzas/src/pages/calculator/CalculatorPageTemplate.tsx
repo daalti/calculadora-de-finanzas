@@ -46,7 +46,7 @@ export const CalculatorPageTemplate: React.FC<Props> = ({
           <AsideMenu />
           <main
             className="compound-interest-content"
-            style={{ maxWidth: "800px", margin: "0 auto", padding: "0 20px" }}
+            style={{ maxWidth: "1000px", margin: "0 auto", padding: "0 20px" }}
           >
             <h1 className="compound-interest-title">{title}</h1>
             <CalloutMessage message={message} title={title} variant="default" />

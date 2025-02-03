@@ -17,7 +17,7 @@ export const BlogFileTemplate: React.FC<Props> = ({ title }) => {
           <AsideMenu />
           <main
             style={{
-              maxWidth: "800px",
+              maxWidth: "1000px",
               margin: "0 auto",
               padding: "0 20px",
             }}
