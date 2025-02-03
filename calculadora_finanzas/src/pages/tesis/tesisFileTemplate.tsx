@@ -20,8 +20,27 @@ export const TesisFileTemplate: React.FC<Props> = ({ title }) => {
               maxWidth: "800px",
               margin: "0 auto",
               padding: "0 20px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
+            <a
+              href={`/src/assets/tesis/pdfs/${title.toLowerCase()}.pdf`}
+              download
+              style={{
+                display: "inline-block",
+                padding: "0.75rem 1.5rem",
+                backgroundColor: "#3B82F6",
+                color: "white",
+                borderRadius: "0.375rem",
+                textDecoration: "none",
+                margin: "2rem 0",
+                cursor: "pointer",
+              }}
+            >
+              Descargar Tesis en PDF
+            </a>
             <MarkDownTextTesis title={title} />
           </main>
         </div>

@@ -48,6 +48,7 @@ export const MarkDownTextTesis: React.FC<Props> = ({ title }) => {
                     fontSize: "1rem",
                     lineHeight: "1.5",
                     marginBottom: "1rem",
+                    textAlign: "justify",
                   }}
                 >
                   {children}

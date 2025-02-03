@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Card } from "../../components/tremor/Card";
 import { Button } from "../../components/tremor/Button";
 import { Input } from "../../components/tremor/Input";
@@ -40,6 +40,7 @@ interface IRPFResult {
   seguridadSocial: number;
   cuotaSolidaridad: number;
   salarioNetoMensual: number;
+  salarioBrutoInicial: number;
 }
 
 interface Deduccion {
@@ -76,6 +77,7 @@ export const ChartCardLaboralCost: React.FC = () => {
     seguridadSocial: 0,
     cuotaSolidaridad: 0,
     salarioNetoMensual: 0,
+    salarioBrutoInicial: 0,
   });
 
   const formatCurrency = (value: number) => {
@@ -115,6 +117,7 @@ export const ChartCardLaboralCost: React.FC = () => {
       let salaryToCalculate =
         IRPFData.TramosSeguridadSocial[formData.grupo].BaseMinima * 12;
       const cotizationCompanyNumber = (salaryToCalculate * 31.4) / 100;
+      console.log(cotizationCompanyNumber);
       setCotizationCompany(cotizationCompanyNumber);
 
       seguridadSocial = (salaryToCalculate * 6.47) / 100;
@@ -122,24 +125,11 @@ export const ChartCardLaboralCost: React.FC = () => {
     } else {
       const cotizationCompanyNumber = (salarioBrutoInicial * 31.4) / 100;
       setCotizationCompany(cotizationCompanyNumber);
+      console.log(cotizationCompanyNumber);
 
       // Calculate Seguridad Social
       seguridadSocial = (salarioBrutoInicial * 6.47) / 100;
       salarioBruto -= seguridadSocial;
-    }
-    if (formData.inferior12meses) {
-      const retencionIRPF12meses = (salarioBruto * 2) / 100;
-      setResult({
-        salarioNeto:
-          salarioBrutoInicial - seguridadSocial - retencionIRPF12meses,
-        retencionIRPF: retencionIRPF12meses,
-        seguridadSocial,
-        cuotaSolidaridad: 0,
-        salarioNetoMensual:
-          (salarioBrutoInicial - seguridadSocial - retencionIRPF12meses) /
-          formData.pagasAnuales,
-      });
-      return;
     }
 
     if (salarioBruto > 14852 && salarioBruto <= 17673.52) {
@@ -248,6 +238,7 @@ export const ChartCardLaboralCost: React.FC = () => {
       retencionIRPF: irpfEstatal + irpfAutonomico,
       seguridadSocial,
       cuotaSolidaridad: 0,
+      salarioBrutoInicial: salarioBrutoInicial,
       salarioNetoMensual:
         (salarioBrutoInicial - irpfEstatal - irpfAutonomico - seguridadSocial) /
         formData.pagasAnuales,
@@ -256,27 +247,34 @@ export const ChartCardLaboralCost: React.FC = () => {
 
   const IRPF_MESSAGE = (
     <>
-      <br />
-      Coste laboral:{" "}
-      <strong style={{ fontSize: "2em" }}>
-        {formatCurrency(cotizationCompany + result.salarioNeto)}
+      Coste laboral: <br />
+      <strong style={{ fontSize: "1.5em" }}>
+        {formatCurrency(cotizationCompany + result.salarioBrutoInicial)}
       </strong>
       <br />
       <br />
       Salario neto anual:{" "}
-      <strong style={{ fontSize: "2em" }}>
+      <strong style={{ fontSize: "1.5em" }}>
         {formatCurrency(result.salarioNeto)}
       </strong>
       <br />
       <br />
-      De lo que paga la empresa cuanto se queda el estado:{" "}
-      <strong style={{ fontSize: "2em" }}>
-        {formatCurrency(
-          result.salarioNeto / (cotizationCompany + result.salarioNeto)
-        )}
+      De lo que paga la empresa cuanto se queda el estado:
+      <strong style={{ fontSize: "1.5em" }}>
+        {(
+          (1 -
+            result.salarioNeto /
+              (cotizationCompany + result.salarioBrutoInicial)) *
+          100
+        ).toFixed(2)}
+        %
       </strong>
     </>
   );
+
+  useEffect(() => {
+    calculateIRPF();
+  }, []);
 
   return (
     <div className="irpf-card-container">
