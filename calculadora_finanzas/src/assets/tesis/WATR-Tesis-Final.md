@@ -125,7 +125,7 @@ El técnico proporciona un informe final detallando la reparación realizada y d
 
 ### Costes
 
-Water Intelligence cobra un costo inicial de entre **$250** y **$350** por la primera llamada del cliente, que cubre hasta dos horas de servicio. Si se requiere más tiempo, el costo es de **$125** cada hora adicional. El servicio incluye un informe detallado que recomienda el procedimiento a seguir. Además, las tareas adicionales pueden variar en costo desde **$300** hasta **$7500**, dependiendo de la complejidad y la cantidad de trabajo necesario. _(Coste medio del servicio)_
+Water Intelligence cobra un costo inicial de entre 250 y 350 dlares por la primera llamada del cliente, que cubre hasta dos horas de servicio. Si se requiere más tiempo, el costo es de $125 cada hora adicional. El servicio incluye un informe detallado que recomienda el procedimiento a seguir. Además, las tareas adicionales pueden variar en costo desde 300 hasta 7500 dólares, dependiendo de la complejidad y la cantidad de trabajo necesario. _(Coste medio del servicio)_
 
 ### Venta de Piezas y Equipos
 
@@ -280,21 +280,21 @@ El gasto diario de agua doméstico en Estados Unidos es de **40,286,002 millones
 
 **Factura de agua:** En muchos casos, el cargo fijo puede representar alrededor del **30-50%** de la factura total, mientras que el cargo variable, que depende del consumo de agua, puede constituir el **50-70%** restante. _(EPA-water-bill)_
 
-Suponiendo que el consumo de agua en la factura del hogar representa un **60%**, los hogares que tienen pérdidas de agua pueden ver reducida su factura de agua en un **18%** si arreglan sus fugas. Considerando estos factores, el costo promedio mensual de la factura de agua para un hogar de **2.51** personas en los Estados Unidos estaría alrededor de **$36 a $50**. Cogeremos **$43**. _(Average-water-bill)_
+Suponiendo que el consumo de agua en la factura del hogar representa un **60%**, los hogares que tienen pérdidas de agua pueden ver reducida su factura de agua en un **18%** si arreglan sus fugas. Considerando estos factores, el costo promedio mensual de la factura de agua para un hogar de **2.51** personas en los Estados Unidos estaría alrededor de 36 a 50 dólares. Cogeremos **$43**. _(Average-water-bill)_
 
-- **$43 × 0.82 = $35**  
-  Es decir, cada hogar que tiene fugas de agua pierde **$8 mensuales** o lo que es lo mismo, **$96 anuales**. Si no se arregla la fuga, hay muchas posibilidades de que empeore y se pierda más dinero, por lo que supondremos que cada año que pasa sin arreglarse se perderá un **20%** anual más. En **5 años** habremos perdido **$888** en la factura del agua, lo que es superior al gasto medio del servicio de reparación de fugas en Estados Unidos que es **$868**. _(Coste medio del servicio)_
+- **$43 × 0.82 = $35** Es decir, cada hogar que tiene fugas de agua pierde 8 dólares mensuales o lo que es lo mismo, 96 dólares anuales. Si no se arregla la fuga, hay muchas posibilidades de que empeore y se pierda más dinero, por lo que supondremos que cada año que pasa sin arreglarse se perderá un **20%** anual más. En 5 años habremos perdido 888 en la factura del agua, lo que es superior al gasto medio del servicio de reparación de fugas en Estados Unidos que es 868. _(Coste medio del servicio)_
 
 Por lo que suponemos que, en general, en 5 años casi todos los hogares que tengan fugas arreglarán estas mismas. Así, tenemos un **TAM** en fugas en el hogar de:
 
-**$868 × (129.8 millones de hogares × 0.1 (10% hogares con fugas)) / 5 (en 5 años se arreglarán las fugas) × 0.9 (margen de error) = $2bn**  
+`$868 × (129.8 millones de hogares × 0.1 (10% hogares con fugas)) / 5 (en 5 años se arreglarán las fugas) × 0.9 (margen de error) = $2bn`
+
 TAM estimada en hogares.
 
 ### TAM Infraestructuras Municipales
 
 En cuanto a infraestructuras municipales, no he encontrado un dato en concreto, pero haciendo caso a lo que dice la **EPA** —que se necesitarán alrededor de **$625bn** en los próximos 20 años para mantener en buen estado las infraestructuras de agua—, haciendo un pequeño cálculo vemos que:
 
-**$625bn / 20 = $31.25bn** anuales lo que se necesita gastar. Quitando los **$2bn** en hogares, las infraestructuras municipales tienen un **TAM de $29.25bn**.
+`$625bn / 20 = $31.25bn` anuales lo que se necesita gastar. Quitando los `$2bn` en hogares, las infraestructuras municipales tienen un `TAM de $29.25bn`.
 
 Ahora mismo, Water Intelligence, contando lo que generan sus franquicias, tendría unos ingresos de **$170 millones**, lo que supondría un **0.5%** del mercado.
 
@@ -375,13 +375,11 @@ Water Intelligence ha crecido sus **revenues** un **18.6% anual** durante los ú
 > "We are performing well despite macroeconomic headwinds in terms of high interest rates and persistent inflation."  
 > — **Dr. Patrick DeSouza**
 
-En cuanto al **EBIT ajustado**, ha crecido de **$2.7 millones** a **$7.1 millones**, lo que supone un crecimiento anual del **21.7%**. Es verdad que desde 2021 apenas se ha incrementado, debido a que el **OPEX** en el año **2022** y **2023** se ha incrementado.
+En cuanto al **EBIT ajustado**, ha crecido de 2.7 millones a 7.1 millones**, lo que supone un crecimiento anual del **21.7%**. Es verdad que desde 2021 apenas se ha incrementado, debido a que el **OPEX** en el año **2022** y **2023\*\* se ha incrementado.
 
-Lo que nos explica la empresa es que se invirtió en la captación y formación de nuevos técnicos, y cada nuevo técnico requiere hasta **dieciocho meses** de formación antes de que pueda trabajar por sí mismo, lo que ha hecho resentir el margen EBIT. Además, puede ser que las franquicias readquiridas en **2022** y **2023** todavía no estén funcionando al **100%**, por lo que los márgenes se resienten. Por ejemplo, en **2023** la compañía explica que las nuevas franquicias recompradas generaron **$2,442,569** de revenue y **$212,000** de net income, lo que supone un margen de **8.6%**, inferior al margen de las tiendas corporate, que es de **16.7%** en 2023.
+Lo que nos explica la empresa es que se invirtió en la captación y formación de nuevos técnicos, y cada nuevo técnico requiere hasta **dieciocho meses** de formación antes de que pueda trabajar por sí mismo, lo que ha hecho resentir el margen EBIT. Además, puede ser que las franquicias readquiridas en **2022** y **2023** todavía no estén funcionando al **100%**, por lo que los márgenes se resienten. Por ejemplo, en **2023** la compañía explica que las nuevas franquicias recompradas generaron 2,442,569 de revenue y 212,000 de net income, lo que supone un margen de **8.6%**, inferior al margen de las tiendas corporate, que es de **16.7%** en 2023.
 
-- **Nashville:** Sales **$1,880,882**, net income **$141,637**
-- **Covina:** Sales **$446,765**, net income **$58,145**
-- **Pittsburgh:** Sales **$114,922**, net income **$12,223**
+![](/src/assets/tesis/water/Picture17.webp)
 
 Además de lo explicado, puede ser que, debido a la situación macroeconómica e inflación, se hayan tenido gastos extraordinarios que deberían normalizarse durante los siguientes años.
 
@@ -389,28 +387,28 @@ En resumidas cuentas, se espera que el margen EBIT vuelva a incrementarse en los
 
 Ahora, analicemos el **revenue** y el **EBT** de los diferentes segmentos que tiene la empresa:
 
-![Ilustración 16: Segments Revenue](/src/assets/tesis/water/Picture17.webp)
+![Ilustración 16: Segments Revenue](/src/assets/tesis/water/Picture18.webp)
 
 - **Franchise Royalty Income:** Como podemos ver, los revenues prácticamente no han crecido debido a que la empresa está recomprando sus propias franquicias; sin embargo, se observa que el margen ha ido creciendo de un **24.7%** a un **32%**.
-- **Franchise Related Activity:** Ha incrementado de **$8 millones** a **$11 millones**, un incremento anual del **11%**. Esto se debe principalmente a la parte aseguradora, en la cual se han ido adquiriendo nuevos contratos con aseguradoras. A medida que la empresa crezca, se espera que este segmento del negocio crezca. Por otro lado, es un segmento que tiene márgenes más pequeños, pero genera ingresos muy predecibles.
+- **Franchise Related Activity:** Ha incrementado de 8 millones a 11 millones, un incremento anual del **11%**. Esto se debe principalmente a la parte aseguradora, en la cual se han ido adquiriendo nuevos contratos con aseguradoras. A medida que la empresa crezca, se espera que este segmento del negocio crezca. Por otro lado, es un segmento que tiene márgenes más pequeños, pero genera ingresos muy predecibles.
 - **US Corporate Operated Locations:** Este segmento es el que más crece debido a la estrategia de la empresa, en la cual se están recomprando franquicias. Ha tenido un incremento anual del **28.4%** en los últimos 5 años; sin embargo, se observa que en **2022** y **2023** los márgenes se han reducido. La empresa no lo explica explícitamente, pero esto puede deberse a que en **2021** se adquirieron **11 franquicias** y quizás todavía no están al 100% optimizadas. Se espera que, con el tiempo, estos márgenes se estabilicen o incluso crezcan.
 - **International Corporate Operated Locations:** En este último segmento, los revenues han crecido un **17% anual** y se espera que sigan creciendo. Por otro lado, se observa que los márgenes son muy pequeños en comparación con las tiendas corporate ubicadas en Estados Unidos, dado que estas tiendas, al ser nuevas, no están del todo maduras; se espera que en el futuro los márgenes sean similares o algo menores que los de sus homólogos en Estados Unidos.
 
 ## Operating Cash Flow y Free Cash Flow
 
-![Ilustración 17: Operating Cash Flow](/src/assets/tesis/water/Picture18.webp)
+![Ilustración 17: Operating Cash Flow](/src/assets/tesis/water/Picture19.webp)
 
-Water Intelligence ha aumentado su flujo de caja operativo de menos **$1.3 millones** a casi **$5.5 millones**, debido principalmente al incremento del EBIT ajustado, ya que el resto de las partidas se han mantenido bastante estables. Se observa que el margen de Operating Cash Flow respecto a los revenues es de un **7%**, el cual debería normalizarse en los siguientes años acercándose al **10%**.
+Water Intelligence ha aumentado su flujo de caja operativo de menos$1.3 millones a casi 5.5 millones, debido principalmente al incremento del EBIT ajustado, ya que el resto de las partidas se han mantenido bastante estables. Se observa que el margen de Operating Cash Flow respecto a los revenues es de un **7%**, el cual debería normalizarse en los siguientes años acercándose al **10%**.
 
 En cuanto al **Free Cash Flow** generado por la compañía, se presenta la siguiente tabla:
 
-![Ilustración 18: Free Cash Flow](/src/assets/tesis/water/Picture19.webp)
+![Ilustración 18: Free Cash Flow](/src/assets/tesis/water/Picture20.webp)
 
 Se observa que, principalmente, el gasto en **M&A** se mantiene constante debido a la readquisición de franquicias y a la compra de competidores. Sin embargo, habría que excluir **$1.5 millones** en 2021, 2022 y 2023 debidos a la implantación de **Salesforce**, que se espera que a partir de **2024** genere retornos muy positivos.
 
-En **2022**, la empresa obtuvo **$12,356,696** en nuevos préstamos; sin embargo, en **2023** esta cantidad se redujo a **$2,811,353**. Esto se debe principalmente a un cambio en la estrategia de financiamiento y a la necesidad de la empresa de gestionar mejor sus niveles de deuda, especialmente en un entorno económico caracterizado por altas tasas de interés y una inflación persistente. Por otro lado, en **2021** la empresa emitió acciones por valor de **$19 millones** para financiar este crecimiento. Como se observa en la siguiente imagen, el equipo gestor hizo la ampliación cuando la acción estaba en máximos, lo que demuestra su calidad.
+En **2022**, la empresa obtuvo 12,356,696 en nuevos préstamos; sin embargo, en 2023 esta cantidad se redujo a 2,811,353. Esto se debe principalmente a un cambio en la estrategia de financiamiento y a la necesidad de la empresa de gestionar mejor sus niveles de deuda, especialmente en un entorno económico caracterizado por altas tasas de interés y una inflación persistente. Por otro lado, en **2021** la empresa emitió acciones por valor de **$19 millones** para financiar este crecimiento. Como se observa en la siguiente imagen, el equipo gestor hizo la ampliación cuando la acción estaba en máximos, lo que demuestra su calidad.
 
-![Ilustración 19: Evolución del Valor de la Empresa y Ampliación de Capital](/src/assets/tesis/water/Picture20.webp)
+![Ilustración 19: Evolución del Valor de la Empresa y Ampliación de Capital](/src/assets/tesis/water/Picture21.webp)
 
 Para finalizar, se debe decir que la empresa no está generando **Free Cash Flow** ya que está invirtiendo todo su flujo de caja operativo en seguir readquiriendo franquicias o empresas e incluso se endeuda para acelerar este proceso.
 
@@ -418,11 +416,11 @@ Para finalizar, se debe decir que la empresa no está generando **Free Cash Flow
 
 En cuanto a la deuda de la compañía y la posición de caja, la situación es la siguiente:
 
-![](/src/assets/tesis/water/Picture21.webp)
+![](/src/assets/tesis/water/Picture22.webp)
 
-Tiene **$15.7 millones** en caja y **$14.46 millones** en deuda. Los ratios son los siguientes:
+Tiene 15.7 millones en caja y 14.46 millones en deuda. Los ratios son los siguientes:
 
-![Ilustración 20: Ratios](/src/assets/tesis/water/Picture22.webp)
+![Ilustración 20: Ratios](/src/assets/tesis/water/Picture23.webp)
 
 - El ratio **Cash eq + Acc Receivable / S-T Liabilities (incl. Debt)**, que mide la capacidad de la empresa para cubrir sus pasivos a corto plazo con su efectivo y cuentas por cobrar, ha fluctuado pero se ha mantenido aceptable, disminuyendo de un pico de **2.5** en 2021 a **1.5** en 2023. Aunque esta disminución indica una menor liquidez reciente, el ratio sigue mostrando que la empresa tiene suficientes activos líquidos para cubrir sus obligaciones a corto plazo.
 - El ratio **Current Assets / Current Liabilities**, que evalúa la capacidad de la empresa para cumplir con sus obligaciones corrientes, también mostró una tendencia similar: alcanzó un máximo de **2.6** en 2021 y se redujo a **1.6** en 2023. Este ratio indica que la empresa puede cubrir sus pasivos corrientes, aunque la disminución refleja una menor capacidad de liquidez comparada con años anteriores.
@@ -433,11 +431,11 @@ Tiene **$15.7 millones** en caja y **$14.46 millones** en deuda. Los ratios son 
 
 La importancia del equipo directivo en **Water Intelligence** no puede subestimarse. Dada la naturaleza altamente técnica e innovadora de sus servicios de detección y reparación de fugas de agua, un liderazgo competente es esencial para mantener la calidad y consistencia de las soluciones ofrecidas. Además, en el contexto de una estrategia de crecimiento agresiva que incluye la readquisición y venta de nuevas franquicias, la capacidad del equipo directivo para navegar desafíos económicos, gestionar eficientemente los recursos y capital, y mantener relaciones sólidas con franquiciados y socios es vital.
 
-![Ilustración 20: Ratios](/src/assets/tesis/water/Picture23.webp)
+![](/src/assets/tesis/water/Picture24.webp)
 
 **Patrick DeSouza** es el CEO de la empresa y posee una cantidad significativa de acciones, con un total de **4,867,110**, lo que representa el **25%** del total de acciones de la compañía. Este hecho indica que tiene una participación considerable (**"skin in the game"**) en la empresa, lo cual es una señal positiva para los accionistas. Su sueldo de **$595,000** es relativamente bajo en comparación con su participación accionaria y el valor de las opciones que se le conceden. Esta estructura de compensación asegura que los intereses de Patrick DeSouza estén fuertemente alineados con los de la empresa y sus accionistas, ya que gran parte de su incentivo financiero depende del rendimiento de la compañía y el valor de sus acciones.
 
-![Ilustración 21: Ratios](/src/assets/tesis/water/Picture24.webp)
+![](/src/assets/tesis/water/Picture25.webp)
 
 **Patrick J. DeSouza**, Executive Chairman de Water Intelligence plc y Chairman de American Leak Detection, cuenta con más de **25 años** de experiencia en liderazgo operativo y asesoría en sectores como **defensa**, **software/Internet** y **gestión de activos**. Es graduado de **Columbia College**, posee un título en Derecho de **Yale Law School** y un posgrado de **Stanford Graduate School**. Su carrera incluye prácticas en derecho corporativo y de valores en Nueva York y California, así como un rol en la Casa Blanca como Director para Asuntos Interamericanos en el Consejo de Seguridad Nacional. Autor de _"Economic Strategy and National Security"_ (2000), DeSouza posee una participación significativa del **27.83%** en Water Intelligence plc, lo que alinea sus intereses con los de la empresa y sus accionistas. Bajo su liderazgo, Water Intelligence ha crecido sustancialmente, implementando tecnologías innovadoras para detectar y reparar fugas de agua de manera no invasiva. Desde su nombramiento como Executive Chairman en 2010, ha guiado la expansión de la empresa, elevando sus ingresos y beneficios anuales a través de la mejora de operaciones corporativas y franquicias, además de supervisar adquisiciones estratégicas y mejoras tecnológicas que han fortalecido la posición de Water Intelligence en el mercado global. Su estructura de compensación, que incluye un salario relativamente modesto y opciones sobre acciones, subraya su compromiso con el éxito a largo plazo de la compañía. _(Water Intelligence)_
 
@@ -514,36 +512,38 @@ En cuanto a las franquicias, como se explicó en la estrategia de la compañía,
 
 Teniendo en cuenta todo esto, las franquicias generan un total de **$100 millones** de revenue y lo que Water Intelligence gana de ellas es un **6.7%**. Asumiendo ese margen constante, que se recompran **4 franquicias anualmente** y se abre una nueva con un crecimiento orgánico de las franquicias de un **5%** (debido a la inflación), tendríamos los siguientes resultados:
 
-![Ilustración 21: Revenue futuro de las franquicias](/src/assets/tesis/water/Picture25.webp)
+![Ilustración 21: Revenue futuro de las franquicias](/src/assets/tesis/water/Picture26.webp)
 
 ### Tiendas Corporate
 
-![Ilustración 22: Revenue Futuro de las tiendas Corporate](/src/assets/tesis/water/Picture26.webp)
+![Ilustración 22: Revenue Futuro de las tiendas Corporate](/src/assets/tesis/water/Picture27.webp)
 
 Se espera que las tiendas corporate vayan incrementándose año a año. Se ha supuesto un incremento de **4 tiendas anuales** y que la ganancia por tienda corporate se incremente un **8% año sobre año**, debido, por un lado, a la inflación y, por otro, a que las franquicias readquiridas irán madurando y volviéndose más eficientes.
 
 En el caso de la inflación, se tiene en cuenta que los servicios de agua suelen traspasar la inflación a los clientes; el servicio orgánico vía precios debería ser alrededor del **5%**, como se explica en el informe del gobierno estadounidense.
 
-![Ilustración 27: Proyección de Revenue para Tiendas Corporate](/src/assets/tesis/water/Picture27.webp)
+![](/src/assets/tesis/water/Picture28.webp)
 
 ## Segmento Asegurador
 
 En este segmento, también se incluiría la parte de venta de productos y franquicias, pero es un porcentaje tan pequeño (ver ilustración 23) que se englobará junto a los seguros.
 
-![Ilustración 23: Segmento Asegurador y Venta de Franquicias y Productos](/src/assets/tesis/water/Picture28.webp)
+![Ilustración 23: Segmento Asegurador y Venta de Franquicias y Productos](/src/assets/tesis/water/Picture29.webp)
 
 En los últimos años, la parte aseguradora no ha crecido mucho; esto puede deberse al cambio de regulación de la **Ley del Senado 76** aplicada en **2022**.  
 Seré conservador y supondré un incremento del **5% anual**, aunque si la ley aprobada en 2022 ha tenido un efecto negativo, este incremento podría llegar al **10% anual**.
 
-![Ilustración 24: Revenues del Segmento Asegurador](/src/assets/tesis/water/Picture29.webp)
+![Ilustración 24: Revenues del Segmento Asegurador](/src/assets/tesis/water/Picture30.webp)
 
 Además, la implementación de **Salesforce** podría ayudar a adquirir nuevos contratos, ya que en los últimos contratos se resaltó que dicha implantación fue fundamental.
+
+![](/src/assets/tesis/water/Picture31.webp)
 
 ## Segmento Internacional (WII)
 
 El segmento internacional ha ido creciendo año tras año a más de un **15%**, por lo que, dada la multiplicidad de oportunidades para expandirse, es razonable que pueda seguir creciendo a ese ritmo. Por otro lado, se espera que los márgenes en las tiendas internacionales se incrementen a medida que se optimicen y se acerquen a los márgenes de las tiendas de Estados Unidos.
 
-![Ilustración 25: Revenues Segmento Internacional](/src/assets/tesis/water/Picture30.webp)
+![Ilustración 25. Revenues Segmento internacional](/src/assets/tesis/water/Picture32.webp)
 
 ## Valoración Final
 
@@ -551,15 +551,15 @@ Después de valorar cada segmento individualmente, se estima que Water Intellige
 
 Por otro lado, se prevé un aumento de los márgenes operativos, ya que en **2022** y **2023** se realizó un esfuerzo en contratar nuevos técnicos que comenzarán a ser productivos durante **2024**. Además, la implementación de **Salesforce** debería incrementar la productividad en todas sus tiendas y franquicias readquiridas, y el sector internacional debería optimizarse y ser más eficiente. Por ello, se espera una expansión del margen del **9.5%** al **16%** en **2028**.
 
-Teniendo en cuenta lo anterior, y que se espera que el **CAPEX** y la **D&A** aumenten un **10% anual**, se prevé que el **OP Cash Flow normalizado** pase de **$5 millones** a **$19 millones** en **2028**, lo que supondría un aumento anualizado del **28.7%**.
+Teniendo en cuenta lo anterior, y que se espera que el **CAPEX** y la **D&A** aumenten un **10% anual**, se prevé que el **OP Cash Flow normalizado** pase de 5 millones a 19 millones de dólares en **2028**, lo que supondría un aumento anualizado del **28.7%**.
 
-Por último, para calcular el **FCF**, se debe considerar el gasto en readquisición de nuevas compañías. Suponiendo que la empresa readquirirá **4 franquicias anualmente** y que el gasto medio en readquisición es de alrededor de **$1.17 millones** _(ver ilustración 5)_, se asume un gasto en **M&A** de **$5 millones anuales**. No se supone ningún otro gasto significativo, ya que, excepto en los últimos años con la implementación de Salesforce, la empresa no suele gastar en activos intangibles.
+Por último, para calcular el **FCF**, se debe considerar el gasto en readquisición de nuevas compañías. Suponiendo que la empresa readquirirá **4 franquicias anualmente** y que el gasto medio en readquisición es de alrededor de 1.17 millones (ver ilustración 5), se asume un gasto en M&A de 5 millones anuales. No se supone ningún otro gasto significativo, ya que, excepto en los últimos años con la implementación de Salesforce, la empresa no suele gastar en activos intangibles.
 
-Teniendo en cuenta todo lo anterior, se estima que la empresa estaría generando en **2028** **$14 millones** de FCF y, valorándola a un múltiplo de **10-12**, la empresa tendría un market cap de entre **$140** y **$168 millones**. Actualmente, la empresa tiene un market cap de **$95 millones**, lo que implicaría una revalorización anualizada del **8%-12%** durante los próximos 5 años.
+Teniendo en cuenta todo lo anterior, se estima que la empresa estaría generando en **2028** 14 millones de FCF y, valorándola a un múltiplo de **10-12**, la empresa tendría un market cap de entre 140 y 168 millones. Actualmente, la empresa tiene un market cap de **$95 millones**, lo que implicaría una revalorización anualizada del **8%-12%** durante los próximos 5 años.
 
 Por otro lado, la compañía está evaluando un plan de recompra de acciones, ya que considera que cotiza con descuento, pero este factor no se ha tenido en cuenta en el análisis.
 
-![Ilustración 26: Valoración Final](/src/assets/tesis/water/Picture31.webp)
+![Ilustración 26: Valoración Final](/src/assets/tesis/water/Picture33.webp)
 
 En conclusión, **Water Intelligence** opera en un mercado **resiliente** a las crisis y con grandes vientos de cola, en un sector muy **fragmentado** en el que tiene numerosas oportunidades de crecimiento. Además, su estrategia de crecimiento basada en la recompra de franquicias es predecible y replicable en el sector internacional. Su equipo directivo, alineado con los intereses de los accionistas, busca hacer florecer el valor de la compañía.
 
