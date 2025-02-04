@@ -8,7 +8,6 @@ import {
   Drawer,
   DrawerBody,
   DrawerContent,
-  DrawerDescription,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
