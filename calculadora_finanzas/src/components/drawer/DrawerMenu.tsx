@@ -1,7 +1,7 @@
 import { Label } from "../../components/tremor/Label";
 import { Link } from "react-router-dom";
 import calculatorData from "../../assets/calculator/calculator.json";
-import blogData from "../../../public/assets/blogs/blog.json";
+import blogData from "../../assets/blogs/blog.json";
 import tesisData from "../../assets/tesis/tesis.json";
 import logo from "../../assets/logo/logo.svg";
 import {

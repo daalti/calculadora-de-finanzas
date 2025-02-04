@@ -1,5 +1,5 @@
 import { Card } from "../../components/tremor/Card";
-import blogData from "../../../public/assets/blogs/blog.json";
+import blogData from "../../assets/blogs/blog.json";
 import { useNavigate } from "react-router-dom";
 import "./ChartBlogInitial.css";
 
@@ -19,7 +19,7 @@ export const ChartBlogInitial: React.FC<Props> = () => {
         >
           <div className="calculator-card-content">
             <img
-              src={`/assets/blogs/images/blog-${index + 1}.webp`}
+              src={`/src/assets/blogs/images/blog-${index + 1}.webp`}
               alt={data.titulo}
               className="calculator-card-image"
             />

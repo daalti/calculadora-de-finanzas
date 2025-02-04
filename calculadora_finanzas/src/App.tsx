@@ -24,7 +24,6 @@ function App(): JSX.Element {
   const glossaryTerms = getGlossaryTerms();
   const TesisFiles = getTesisFiles();
   const BlogsFiles = getBlogsFiles();
-
   console.log(BlogsFiles);
 
   return (

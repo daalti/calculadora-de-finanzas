@@ -1,5 +1,5 @@
 export const getGlossaryTerms = (): string[] => {
-  const files = import.meta.glob("../../public/assets/glossary/*.md", {
+  const files = import.meta.glob("../assets/glosary/*.md", {
     query: "?raw",
     eager: true,
   });
@@ -11,7 +11,7 @@ export const getGlossaryTerms = (): string[] => {
 };
 
 export const getTesisFiles = (): string[] => {
-  const files = import.meta.glob("../../public/assets/tesis/*.md", {
+  const files = import.meta.glob("../assets/tesis/*.md", {
     query: "?raw",
     eager: true,
   });
@@ -23,7 +23,7 @@ export const getTesisFiles = (): string[] => {
 };
 
 export const getBlogsFiles = (): string[] => {
-  const files = import.meta.glob("../../public/assets/blogs/*.md", {
+  const files = import.meta.glob("../assets/blogs/*.md", {
     query: "?raw",
     eager: true,
   });
