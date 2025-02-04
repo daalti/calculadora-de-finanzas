@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import { Label } from "../../components/tremor/Label";
 import { Link } from "react-router-dom";
 import calculatorData from "../../assets/calculator/calculator.json";
-import blogData from "../../../public/assets/blogs/blog.json";
 import tesisData from "../../assets/tesis/tesis.json";
 import logo from "../../assets/logo/logo.svg";
 import {
@@ -14,7 +14,25 @@ import {
 } from "../tremor/Drawer";
 import "./DrawerMenu.css";
 
+// Función para obtener los blogs
+const getBlogData = async () => {
+  const response = await fetch("/assets/blogs/blog.json");
+  const data = await response.json();
+  return data;
+};
+
 export const DrawerMenu: React.FC = () => {
+  const [blogData, setBlogData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const blogs = await getBlogData();
+      setBlogData(blogs);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="flex justify-center nav-box-container-mobile-menu">
       <Drawer>

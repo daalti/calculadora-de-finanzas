@@ -13,6 +13,7 @@ import { BlogFileTemplate } from "./pages/blog/BlogFileTemplate";
 import { IRPFComparison } from "./pages/calculator/IRPFComparison";
 import { LaboralCost } from "./pages/calculator/LaboralCost";
 import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   getGlossaryTerms,
   getTesisFiles,
@@ -23,9 +24,17 @@ import { TesisFileTemplate } from "./pages/tesis/tesisFileTemplate";
 function App(): JSX.Element {
   const glossaryTerms = getGlossaryTerms();
   const TesisFiles = getTesisFiles();
-  const BlogsFiles = getBlogsFiles();
 
-  console.log(BlogsFiles);
+  const [blogsFiles, setBlogsFiles] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const files = await getBlogsFiles();
+      setBlogsFiles(files);
+    };
+
+    fetchBlogs();
+  }, []);
 
   return (
     <Routes>
@@ -57,7 +66,7 @@ function App(): JSX.Element {
           element={<GlosarioFileTemplate title={term} />}
         />
       ))}
-      {BlogsFiles.map((file) => (
+      {blogsFiles.map((file) => (
         <Route
           key={file}
           path={`/${file}`}

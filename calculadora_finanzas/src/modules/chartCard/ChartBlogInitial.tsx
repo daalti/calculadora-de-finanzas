@@ -1,16 +1,35 @@
+import { useEffect, useState } from "react";
 import { Card } from "../../components/tremor/Card";
-import blogData from "../../../public/assets/blogs/blog.json";
 import { useNavigate } from "react-router-dom";
 import "./ChartBlogInitial.css";
+
+// Función para obtener los datos del blog desde public
+const getBlogData = async () => {
+  const response = await fetch("/assets/blogs/blog.json");
+  const data = await response.json();
+  return data;
+};
 
 interface Props {}
 
 export const ChartBlogInitial: React.FC<Props> = () => {
   const navigate = useNavigate();
+  const [blogData, setBlogData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const blogs = await getBlogData();
+      // Si blogs no es un array, se convierte en array usando Object.values
+      const blogsArray = Array.isArray(blogs) ? blogs : Object.values(blogs);
+      setBlogData(blogsArray);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="compound-interest-card-container">
-      {Object.values(blogData).map((data, index) => (
+      {blogData.map((data, index) => (
         <Card
           key={data.titulo}
           className="compound-interest-card"

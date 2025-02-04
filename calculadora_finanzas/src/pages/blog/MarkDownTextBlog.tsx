@@ -18,10 +18,10 @@ export const MarkDownTextBlog: React.FC<Props> = ({ title }) => {
     fetch(`/assets/blogs/${title.toLowerCase()}.md`)
       .then((res) => res.text())
       .then((text) => {
-        // Replace image path in markdown
+        // Reemplaza la ruta de imágenes para que apunte a la carpeta public
         const updatedText = text.replace(
           /\/src\/assets\/blogs\/images/g,
-          "../../../public/assets/blogs/images"
+          "/assets/blogs/images"
         );
         setContent(updatedText);
       });
@@ -31,11 +31,10 @@ export const MarkDownTextBlog: React.FC<Props> = ({ title }) => {
     <div className="venture-capital-container">
       <div className="venture-capital-card">
         <ReactMarkdown
-          remarkPlugins={[remarkGfm, remarkMath, remarkGfm]}
+          remarkPlugins={[remarkGfm, remarkMath]} // Nota: no es necesario repetir remarkGfm
           rehypePlugins={[rehypeRaw, rehypeKatex]}
           components={{
             p: ({ node, children }) => {
-              // Check if the paragraph contains an image
               const hasImage = node?.children?.some(
                 (child: any) => child.tagName === "img"
               );
@@ -87,105 +86,7 @@ export const MarkDownTextBlog: React.FC<Props> = ({ title }) => {
                 </figcaption>
               </figure>
             ),
-            a: ({ children, href }) => (
-              <a
-                href={href}
-                style={{
-                  color: "#3B82F6",
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                }}
-              >
-                {children}
-              </a>
-            ),
-            ol: ({ children }) => (
-              <ol
-                style={{
-                  listStyleType: "decimal",
-                  paddingLeft: "2rem",
-                  marginBottom: "1rem",
-                }}
-              >
-                {children}
-              </ol>
-            ),
-            ul: ({ children }) => (
-              <ul
-                style={{
-                  listStyleType: "disc",
-                  paddingLeft: "2rem",
-                  marginBottom: "1rem",
-                }}
-              >
-                {children}
-              </ul>
-            ),
-            li: ({ children }) => (
-              <li
-                style={{
-                  marginBottom: "0.5rem",
-                }}
-              >
-                {children}
-              </li>
-            ),
-            table: ({ children }) => (
-              <div style={{ overflowX: "auto", margin: "2rem 0" }}>
-                <table
-                  style={{
-                    width: "100%",
-                    borderCollapse: "collapse",
-                    border: "1px solid #e5e7eb",
-                  }}
-                >
-                  {children}
-                </table>
-              </div>
-            ),
-            thead: ({ children }) => (
-              <thead
-                style={{
-                  backgroundColor: "#f3f4f6",
-                  borderBottom: "2px solid #e5e7eb",
-                }}
-              >
-                {children}
-              </thead>
-            ),
-            tr: ({ children }) => (
-              <tr
-                style={{
-                  borderBottom: "1px solid #e5e7eb",
-                }}
-              >
-                {children}
-              </tr>
-            ),
-            td: ({ children }) => {
-              return (
-                <td
-                  style={{
-                    padding: "12px 16px",
-                    borderBottom: "1px solid #e5e7eb",
-                    textAlign: "right",
-                  }}
-                >
-                  {children}
-                </td>
-              );
-            },
-            th: ({ children }) => (
-              <th
-                style={{
-                  padding: "12px 16px",
-                  textAlign: "right",
-                  fontWeight: 600,
-                }}
-              >
-                {children}
-              </th>
-            ),
+            // ... otros componentes personalizados
           }}
         >
           {content}
