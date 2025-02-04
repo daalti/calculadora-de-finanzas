@@ -28,3 +28,9 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+@media (max-width: 850px) {
+  .media-column-button {
+    flex-direction: column;
+  }
+}

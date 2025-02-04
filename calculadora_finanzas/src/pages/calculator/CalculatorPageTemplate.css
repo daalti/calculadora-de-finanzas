@@ -26,15 +26,19 @@
   min-height: calc(100vh - 95px);
 }
 
+.compound-interest-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
 @media (max-width: 1200px) {
   .compound-interest-content-container {
     grid-template-columns: 1fr;
   }
 }
 
-.compound-interest-content {
-  display: flex;
-  flex-direction: column;
-
-  padding: 20px;
+@media (max-width: 850) {
+  .compound-interest-content-container {
+    grid-template-columns: 1fr;
+  }
 }

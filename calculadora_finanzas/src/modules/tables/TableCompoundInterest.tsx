@@ -37,8 +37,17 @@ export const TableCompoundInterest: React.FC<Props> = ({ chartData }) => {
   };
 
   return (
-    <TableRoot>
-      <Table>
+    <TableRoot style={{ display: "block" }}>
+      <style>
+        {`
+        @media (max-width: 850px) {
+        .responsive-table {
+          display: none;
+        }
+        }
+      `}
+      </style>
+      <Table className="responsive-table">
         <TableHead>
           <TableRow>
             <TableHeaderCell>Año</TableHeaderCell>

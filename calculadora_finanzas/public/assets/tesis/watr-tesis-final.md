@@ -311,15 +311,7 @@ Los competidores de **American Leak Detection** son en su mayoría compañías m
 
 Exceptuando los ingresos de **Roto-Rooter** que son alrededor de **$950 millones** _(10K-Roto-Rooter 2023)_, no he podido encontrar los ingresos específicos que generan los principales competidores de American Leak Detection. Sin embargo, al visitar las páginas web de estos competidores, es evidente que la mayoría operan a nivel **local** o **regional** y no a nivel estatal. Estas empresas suelen tener una presencia limitada en comparación con American Leak Detection, que tiene una cobertura **nacional** y utiliza tecnologías avanzadas para la detección y reparación de fugas. Esta diferencia en escala y tecnología pone de relieve la posición dominante de American Leak Detection en el mercado.
 
-| **Empresa**           | **Nº de localizaciones**                  | **Link**               |
-| --------------------- | ----------------------------------------- | ---------------------- |
-| **Enco Plumbing**     | 17                                        | Enco_Plumbing          |
-| **Parzibal Plumbing** | 25                                        | Parzval Plumbing       |
-| **Cali’s Choice**     | 45 (Only in California)                   | Cali's Choice Plumbing |
-| **Reeves Plumbing**   | 14 (Dallas)                               | Reeves Plumbing        |
-| **Five Star Leak**    | Only California                           | Five Star Leak         |
-| **All Dry USA**       | 8 States (Florida, Texas, Connecticut, …) | All Dry USA            |
-| **Leak Masters**      | Washington, Idaho y Montana (19)          | Leak Masters           |
+![Ilustración 12: Competidores de ALD](/src/assets/tesis/water/PictureTable.JPG)
 
 **American Leak Detection** tiene alrededor de **78 franquicias** en Estados Unidos y opera con **45 tiendas corporativas**. La empresa tiene presencia en **46 estados** de Estados Unidos, ofreciendo servicios de detección y reparación de fugas de agua a nivel **nacional**. Con muchos más locales que sus competidores, American Leak Detection trabaja prácticamente en todo el país, a diferencia de la mayoría de sus competidores que operan principalmente a nivel local o regional. Esta amplia cobertura geográfica y la mayor cantidad de locales destacan su posición dominante en el mercado.
 

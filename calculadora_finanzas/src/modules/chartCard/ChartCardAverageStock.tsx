@@ -150,7 +150,7 @@ export const ChartCardAverageStock: React.FC = () => {
             canRemove={formData.stockData.length > 0}
           />
         ))}
-        <div className="flex justify-center gap-8 mt-4">
+        <div className="flex justify-center gap-8 mt-4 media-column-button">
           <Button variant="light" onClick={addNewStock}>
             Añadir Compra
           </Button>

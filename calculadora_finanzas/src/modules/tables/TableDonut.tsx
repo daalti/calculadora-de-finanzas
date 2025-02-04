@@ -35,41 +35,44 @@ export const TableDonut: React.FC<Props> = ({ data }) => {
       <Table>
         <TableBody>
           <TableRow>
-            <TableCell className="table-row-name">
+            <TableCell className="table-row-name media-table">
               <div style={{ backgroundColor: "#3b82f6", color: "#3b82f6" }}>
                 ""
               </div>
               Inversión inicial
             </TableCell>
-            <TableCell className="text-right">
+            <TableCell className="text-right media-table">
               {formatCurrency(data.initialInvestment)}
             </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="table-row-name">
+            <TableCell className="table-row-name media-table">
               <div style={{ backgroundColor: " #8b5cf6", color: " #8b5cf6" }}>
                 ""
               </div>
               Contribuciones Totales
             </TableCell>
-            <TableCell className="text-right">
+            <TableCell className="text-right media-table">
               {formatCurrency(data.totalContributions)}
             </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="table-row-name">
+            <TableCell className="table-row-name media-table">
               <div style={{ backgroundColor: "#10b981", color: "#10b981" }}>
                 ""
               </div>
               Intereses Totales
             </TableCell>
-            <TableCell className="text-right">
+            <TableCell className="text-right media-table">
               {formatCurrency(data.totalInterest)}
             </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="table-row-name">Total</TableCell>
-            <TableCell className="text-right" style={{ fontWeight: "700" }}>
+            <TableCell className="table-row-name media-table">Total</TableCell>
+            <TableCell
+              className="text-right media-table"
+              style={{ fontWeight: "700" }}
+            >
               {formatCurrency(total)}
             </TableCell>
           </TableRow>
