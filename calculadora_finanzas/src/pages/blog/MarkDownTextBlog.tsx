@@ -15,13 +15,13 @@ export const MarkDownTextBlog: React.FC<Props> = ({ title }) => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`/src/assets/blogs/${title.toLowerCase()}.md`)
+    fetch(`/assets/blogs/${title.toLowerCase()}.md`)
       .then((res) => res.text())
       .then((text) => {
         // Replace image path in markdown
         const updatedText = text.replace(
-          "../../assets/images",
-          "/src/assets/images"
+          /\/src\/assets\/blogs\/images/g,
+          "../../../public/assets/blogs/images"
         );
         setContent(updatedText);
       });
