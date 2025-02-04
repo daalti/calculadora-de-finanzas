@@ -1,25 +1,14 @@
-export const getGlossaryTerms = (): string[] => {
-  const files = import.meta.glob("../../public/assets/glossary/*.md", {
-    query: "?raw",
-    eager: true,
-  });
+export const getGlossaryTerms = async (): Promise<string[]> => {
+  const response = await fetch("/assets/glosary/index.json");
+  const files: string[] = await response.json();
 
-  return Object.keys(files).map((file) => {
-    const filename = file.split("/").pop() || "";
-    return filename.replace(".md", "");
-  });
+  return files.map((file) => file.replace(".md", ""));
 };
 
-export const getTesisFiles = (): string[] => {
-  const files = import.meta.glob("../../public/assets/tesis/*.md", {
-    query: "?raw",
-    eager: true,
-  });
-
-  return Object.keys(files).map((file) => {
-    const filename = file.split("/").pop() || "";
-    return filename.replace(".md", "");
-  });
+export const getTesisFiles = async (): Promise<string[]> => {
+  const response = await fetch("/assets/tesis/index.json");
+  const files = await response.json();
+  return files.map((filename: string) => filename.replace(".md", ""));
 };
 
 export const getBlogsFiles = async (): Promise<string[]> => {

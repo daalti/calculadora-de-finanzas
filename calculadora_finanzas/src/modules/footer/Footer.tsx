@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import calculatorData from "../../assets/calculator/calculator.json";
-import tesisData from "../../assets/tesis/tesis.json";
 import logo from "../../assets/logo/logo.svg";
 import "./Footer.css";
 
@@ -12,13 +10,37 @@ const getBlogData = async () => {
   return data;
 };
 
+// Función para obtener los datos de las calculadoras desde public
+const getCalculatorData = async () => {
+  const response = await fetch("/assets/calculator/calculator.json");
+  const data = await response.json();
+  return data;
+};
+
+// Función para obtener los datos de tesis desde public
+const getTesisData = async () => {
+  const response = await fetch("/assets/tesis/tesis.json");
+  const data = await response.json();
+  return data;
+};
+
 export const FooterPage: React.FC = () => {
   const [blogData, setBlogData] = useState<any[]>([]);
+  const [calculatorData, setCalculatorData] = useState<any[]>([]);
+  const [tesisData, setTesisData] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const blogs = await getBlogData();
-      setBlogData(blogs);
+      const calculators = await getCalculatorData();
+      const tesis = await getTesisData();
+
+      // Asegúrate de que los datos sean arrays
+      setBlogData(Array.isArray(blogs) ? blogs : Object.values(blogs));
+      setCalculatorData(
+        Array.isArray(calculators) ? calculators : Object.values(calculators)
+      );
+      setTesisData(Array.isArray(tesis) ? tesis : Object.values(tesis));
     };
 
     fetchData();
@@ -39,7 +61,7 @@ export const FooterPage: React.FC = () => {
           <div className="footer-section">
             <h3>Calculadoras</h3>
             <ul>
-              {Object.values(calculatorData).map((calculator) => (
+              {calculatorData.map((calculator) => (
                 <li key={calculator.titulo}>
                   <Link to={calculator.link}>{calculator.titulo}</Link>
                 </li>
@@ -50,7 +72,7 @@ export const FooterPage: React.FC = () => {
           <div className="footer-section">
             <h3>Blog</h3>
             <ul>
-              {Object.values(blogData).map((blog) => (
+              {blogData.map((blog) => (
                 <li key={blog.titulo}>
                   <Link to={blog.link}>{blog.titulo}</Link>
                 </li>
@@ -61,7 +83,7 @@ export const FooterPage: React.FC = () => {
           <div className="footer-section">
             <h3>Tesis</h3>
             <ul>
-              {Object.values(tesisData).map((tesis) => (
+              {tesisData.map((tesis) => (
                 <li key={tesis.titulo}>
                   <Link to={tesis.link}>{tesis.titulo}</Link>
                 </li>
@@ -75,28 +97,28 @@ export const FooterPage: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/src/assets/footer/linkdin.webp" alt="LinkedIn" />
+              <img src="/assets/footer/linkdin.webp" alt="LinkedIn" />
             </a>
             <a
               href="https://x.com/daaltigo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/src/assets/footer/x.webp" alt="X" />
+              <img src="/assets/footer/x.webp" alt="X" />
             </a>
             <a
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/src/assets/footer/youtube.png" alt="YouTube" />
+              <img src="/assets/footer/youtube.png" alt="YouTube" />
             </a>
             <a
               href="https://alonsod.substack.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/src/assets/footer/substack.png" alt="Substack" />
+              <img src="/assets/footer/substack.png" alt="Substack" />
             </a>
           </div>
         </div>

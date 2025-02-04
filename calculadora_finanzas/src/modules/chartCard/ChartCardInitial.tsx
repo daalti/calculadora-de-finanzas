@@ -1,16 +1,36 @@
+import { useEffect, useState } from "react";
 import { Card } from "../../components/tremor/Card";
-import calculatorData from "../../assets/calculator/calculator.json";
 import { useNavigate } from "react-router-dom";
 import "./ChartCardInitial.css";
+
+// Función para obtener los datos de las calculadoras desde public
+const getCalculatorData = async () => {
+  const response = await fetch("/assets/calculator/calculator.json");
+  const data = await response.json();
+  return data;
+};
 
 interface Props {}
 
 export const ChartCardInitial: React.FC<Props> = () => {
   const navigate = useNavigate();
+  const [calculatorData, setCalculatorData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const calculators = await getCalculatorData();
+      // Asegurarse de que los datos sean un array
+      setCalculatorData(
+        Array.isArray(calculators) ? calculators : Object.values(calculators)
+      );
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="compound-interest-card-container">
-      {Object.values(calculatorData).map((calculator, index) => (
+      {calculatorData.map((calculator, index) => (
         <Card
           key={calculator.titulo}
           className="compound-interest-card"
@@ -19,7 +39,7 @@ export const ChartCardInitial: React.FC<Props> = () => {
         >
           <div className="calculator-card-content">
             <img
-              src={`/src/assets/calculator/images/calculator-${index + 1}.webp`}
+              src={`/assets/calculator/images/calculator-${index + 1}.webp`}
               alt={calculator.titulo}
               className="calculator-card-image"
             />

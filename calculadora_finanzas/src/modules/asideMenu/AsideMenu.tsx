@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Label } from "../../components/tremor/Label";
 import { Link } from "react-router-dom";
-import calculatorData from "../../assets/calculator/calculator.json";
-import tesisData from "../../assets/tesis/tesis.json";
 import "./AsideMenu.css";
 
 // Función para obtener los datos del blog desde public
@@ -12,15 +10,39 @@ const getBlogData = async () => {
   return data;
 };
 
+// Función para obtener los datos de las calculadoras desde public
+const getCalculatorData = async () => {
+  const response = await fetch("/assets/calculator/calculator.json");
+  const data = await response.json();
+  return data;
+};
+
+// Función para obtener los datos de tesis desde public
+const getTesisData = async () => {
+  const response = await fetch("/assets/tesis/tesis.json");
+  const data = await response.json();
+  return data;
+};
+
 interface Props {}
 
 export const AsideMenu: React.FC<Props> = () => {
   const [blogData, setBlogData] = useState<any[]>([]);
+  const [calculatorData, setCalculatorData] = useState<any[]>([]);
+  const [tesisData, setTesisData] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const blogs = await getBlogData();
-      setBlogData(blogs);
+      const calculators = await getCalculatorData();
+      const tesis = await getTesisData();
+
+      // Asegúrate de que los datos sean arrays
+      setBlogData(Array.isArray(blogs) ? blogs : Object.values(blogs));
+      setCalculatorData(
+        Array.isArray(calculators) ? calculators : Object.values(calculators)
+      );
+      setTesisData(Array.isArray(tesis) ? tesis : Object.values(tesis));
     };
 
     fetchData();
@@ -32,7 +54,7 @@ export const AsideMenu: React.FC<Props> = () => {
         <div>
           <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>Blogs</h3>
           <ul className="aside-menu-ul">
-            {Object.values(blogData).map((blog) => (
+            {blogData.map((blog) => (
               <li key={blog.titulo}>
                 <Label>
                   <Link to={blog.link}>{blog.titulo}</Link>
@@ -46,7 +68,7 @@ export const AsideMenu: React.FC<Props> = () => {
             Tesis de Inversión
           </h3>
           <ul className="aside-menu-ul">
-            {Object.values(tesisData).map((tesis) => (
+            {tesisData.map((tesis) => (
               <li key={tesis.titulo}>
                 <Label>
                   <Link to={tesis.link}>{tesis.titulo}</Link>
@@ -60,7 +82,7 @@ export const AsideMenu: React.FC<Props> = () => {
             Calculadoras
           </h3>
           <ul className="aside-menu-ul">
-            {Object.values(calculatorData).map((calculator) => (
+            {calculatorData.map((calculator) => (
               <li key={calculator.titulo}>
                 <Label>
                   <Link to={calculator.link}>{calculator.titulo}</Link>

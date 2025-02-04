@@ -16,13 +16,13 @@ export const MarkDownText: React.FC<Props> = ({ title }) => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`/src/assets/glosary/${title.toLowerCase()}.md`)
+    fetch(`/assets/glosary/${title.toLowerCase()}.md`)
       .then((res) => res.text())
       .then((text) => {
-        // Replace image path in markdown
+        // Reemplaza la ruta de imágenes para que apunte a la carpeta public
         const updatedText = text.replace(
-          "../../assets/images",
-          "/src/assets/images"
+          /\/src\/assets\/glosary\/images/g,
+          "/assets/glosary/images"
         );
         setContent(updatedText);
       });

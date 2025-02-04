@@ -22,18 +22,29 @@ import {
 import { TesisFileTemplate } from "./pages/tesis/tesisFileTemplate";
 
 function App(): JSX.Element {
-  const glossaryTerms = getGlossaryTerms();
-  const TesisFiles = getTesisFiles();
-
+  const [glossaryTerms, setGlossaryTerms] = useState<string[]>([]);
   const [blogsFiles, setBlogsFiles] = useState<string[]>([]);
+  const [tesisFiles, setTesisFiles] = useState<string[]>([]);
 
   useEffect(() => {
-    const fetchBlogs = async () => {
-      const files = await getBlogsFiles();
-      setBlogsFiles(files);
+    console.log("useEffect triggered"); // 🔍 Verificar si se ejecuta el useEffect
+    const fetchData = async () => {
+      try {
+        const glossary = await getGlossaryTerms();
+        const blogs = await getBlogsFiles();
+        const tesis = await getTesisFiles();
+
+        console.log("Blogs data:", blogs); // 👀 Asegúrate de que esto aparece
+
+        setGlossaryTerms(glossary);
+        setBlogsFiles(blogs);
+        setTesisFiles(tesis);
+      } catch (error) {
+        console.error("Error fetching data:", error); // ⚠️ Captura errores
+      }
     };
 
-    fetchBlogs();
+    fetchData();
   }, []);
 
   return (
@@ -52,13 +63,15 @@ function App(): JSX.Element {
         element={<IRPFComparison />}
       />
       <Route path="/coste-laboral" element={<LaboralCost />} />
-      {TesisFiles.map((file) => (
+
+      {tesisFiles.map((file) => (
         <Route
           key={file}
           path={`/${file}`}
           element={<TesisFileTemplate title={file} />}
         />
       ))}
+
       {glossaryTerms.map((term) => (
         <Route
           key={term}
@@ -66,6 +79,7 @@ function App(): JSX.Element {
           element={<GlosarioFileTemplate title={term} />}
         />
       ))}
+
       {blogsFiles.map((file) => (
         <Route
           key={file}
