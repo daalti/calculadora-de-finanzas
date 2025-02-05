@@ -44,13 +44,14 @@ export const LineChartPresentValue: React.FC<Props> = ({ chartData }) => {
         number.toLocaleString("es-ES", {
           style: "currency",
           currency: "EUR",
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
         })
       }
       onValueChange={(v) => console.log(v)}
       xAxisLabel="Años"
-      {...(!isMobile && { yAxisLabel: "Euros", yAxisWidth: 120 })}
+      yAxisWidth={0}
+      {...(!isMobile && { yAxisWidth: 120 })}
     />
   );
 };

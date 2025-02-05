@@ -1,7 +1,7 @@
 "use client";
 
 import { LineChart } from "../../components/tremor/LineChart";
-
+import { useEffect, useState } from "react";
 interface ChartData {
   year: number;
   balance: number;
@@ -22,6 +22,20 @@ export const LineChartInterest: React.FC<Props> = ({ chartData }) => {
       item.contributions * item.year + item.initialInvestment,
   }));
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 850);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <LineChart
       data={data}
@@ -31,14 +45,14 @@ export const LineChartInterest: React.FC<Props> = ({ chartData }) => {
         number.toLocaleString("es-ES", {
           style: "currency",
           currency: "EUR",
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
         })
       }
       onValueChange={(v) => console.log(v)}
       xAxisLabel="Años"
-      yAxisLabel="Euros"
-      yAxisWidth={120}
+      yAxisWidth={0}
+      {...(!isMobile && { yAxisWidth: 120 })}
     />
   );
 };
