@@ -52,7 +52,9 @@ export const AsideMenu: React.FC<Props> = () => {
     <aside className="aside-container">
       <div className="aside-menu">
         <div>
-          <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>Blogs</h3>
+          <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
+            <Label>Blogs</Label>
+          </h3>
           <ul className="aside-menu-ul">
             {blogData.map((blog) => (
               <li key={blog.titulo}>
@@ -65,7 +67,7 @@ export const AsideMenu: React.FC<Props> = () => {
         </div>
         <div>
           <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-            Tesis de Inversión
+            <Label>Tesis de Inversión</Label>
           </h3>
           <ul className="aside-menu-ul">
             {tesisData.map((tesis) => (
@@ -79,7 +81,7 @@ export const AsideMenu: React.FC<Props> = () => {
         </div>
         <div>
           <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-            Calculadoras
+            <Label>Calculadoras</Label>
           </h3>
           <ul className="aside-menu-ul">
             {calculatorData.map((calculator) => (

@@ -49,7 +49,6 @@ export const DonutChartTemplate: React.FC<Props> = ({
             maximumFractionDigits: 2,
           })
         }
-        style={{ width: "300px", height: "300px" }}
       />
     </div>
   );

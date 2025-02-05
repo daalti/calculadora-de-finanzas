@@ -95,7 +95,7 @@ export const DrawerMenu: React.FC = () => {
               {/* Sección de Blogs */}
               <div>
                 <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-                  Blogs
+                  <Label>Blogs</Label>
                 </h3>
                 <ul className="aside-menu-ul">
                   {blogData.map((blog) => (
@@ -110,7 +110,7 @@ export const DrawerMenu: React.FC = () => {
               {/* Sección de Tesis */}
               <div>
                 <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-                  Tesis de Inversión
+                  <Label>Tesis de Inversión</Label>
                 </h3>
                 <ul className="aside-menu-ul">
                   {tesisData.map((tesis) => (
@@ -125,7 +125,7 @@ export const DrawerMenu: React.FC = () => {
               {/* Sección de Calculadoras */}
               <div>
                 <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
-                  Calculadoras
+                  <Label>Calculadoras</Label>
                 </h3>
                 <ul className="aside-menu-ul">
                   {calculatorData.map((calculator) => (
@@ -141,7 +141,7 @@ export const DrawerMenu: React.FC = () => {
               <div>
                 <h3 style={{ fontWeight: "700", marginBottom: "20px" }}>
                   <a href="/glosario" className="tab-menu-link">
-                    Glosario
+                    <Label>Glosario</Label>
                   </a>
                 </h3>
               </div>

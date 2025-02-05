@@ -667,7 +667,6 @@ export const ChartCardIRPF: React.FC = () => {
                 value: result.seguridadSocial,
               },
             ]}
-            style={{ width: "300px", height: "300px" }}
             category="name"
             variant="pie"
             value="value"

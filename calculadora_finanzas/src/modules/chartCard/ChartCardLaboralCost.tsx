@@ -350,7 +350,6 @@ export const ChartCardLaboralCost: React.FC = () => {
                 value: cotizationCompany,
               },
             ]}
-            style={{ width: "300px", height: "300px" }}
             category="name"
             variant="pie"
             value="value"
