@@ -23,6 +23,7 @@
 .footer-logo {
   height: 125px;
   width: auto;
+  content: url("../../assets/logo/logo.svg");
 }
 
 .footer-social {
@@ -82,4 +83,23 @@
   text-align: center;
   border-top: 1px solid #e5e7eb;
   padding-top: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-section ul li a {
+    color: #fff;
+  }
+
+  .footer-section ul li a:hover {
+    color: #3b82f6;
+  }
+
+  .footer-logo {
+    content: url("../../assets/logo/logo_black.png");
+  }
 }

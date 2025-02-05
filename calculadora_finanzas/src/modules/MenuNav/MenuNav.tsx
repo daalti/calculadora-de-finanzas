@@ -1,4 +1,3 @@
-import logo from "../../assets/logo/logo.svg";
 import { DrawerMenu } from "../../components/drawer/DrawerMenu";
 import "./MenuNav.css";
 
@@ -9,7 +8,7 @@ export const MenuNav = () => {
         <nav className="tab-menu-container">
           <div>
             <a href="/">
-              <img className="tab-menu-logo" src={logo} alt="Logo" />
+              <img className="tab-menu-logo" alt="Logo" />
             </a>
           </div>
           <ul className="tab-menu-navigation">

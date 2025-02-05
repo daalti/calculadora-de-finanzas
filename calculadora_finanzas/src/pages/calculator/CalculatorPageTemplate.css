@@ -19,6 +19,12 @@
   padding: 5px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .compound-interest-main {
+    color: #ffffff;
+  }
+}
+
 .compound-interest-content-container {
   display: grid;
   grid-template-columns: 300px 1fr;

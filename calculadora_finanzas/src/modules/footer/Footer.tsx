@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo/logo.svg";
 import "./Footer.css";
 
 // Función para obtener los datos del blog desde public
@@ -51,11 +50,7 @@ export const FooterPage: React.FC = () => {
       <div className="footer-content">
         <div className="footer-links">
           <div className="footer-top">
-            <img
-              src={logo}
-              alt="Calculadora Finanzas Logo"
-              className="footer-logo"
-            />
+            <img alt="Calculadora Finanzas Logo" className="footer-logo" />
           </div>
 
           <div className="footer-section">

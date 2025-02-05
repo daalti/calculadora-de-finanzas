@@ -41,6 +41,7 @@
 .tab-menu-logo {
   width: 125px;
   height: auto;
+  content: url("../../assets/logo/logo.svg");
 }
 
 .tab-menu-link {
@@ -91,4 +92,28 @@
   height: 20px;
   top: 100%;
   left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .compound-interest-header {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .tab-menu-link {
+    color: #fff;
+  }
+
+  .tab-menu-container-wraper {
+    background-color: #000;
+  }
+
+  .tab-menu-logo {
+    content: url("../../assets/logo/logo_prueba.JPG");
+    background: transparent;
+    color: white;
+    width: 75px;
+    height: auto;
+    margin-left: 20px;
+  }
 }

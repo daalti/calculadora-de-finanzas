@@ -2,13 +2,24 @@
   display: none;
 }
 
+.tab-menu-logo-mobile-menu {
+  height: 125px;
+  width: auto;
+  content: url("../../assets/logo/logo.svg");
+}
+
 @media (max-width: 1200px) {
   .nav-box-container-mobile-menu {
     display: block;
   }
 }
 
-.tab-menu-logo-mobile-menu {
-  width: 100px;
-  height: auto;
+@media (prefers-color-scheme: dark) {
+  .nav-box-container-mobile-menu {
+    color: #fff;
+  }
+
+  .tab-menu-logo-mobile-menu {
+    content: url("../../assets/logo/logo_black.png");
+  }
 }

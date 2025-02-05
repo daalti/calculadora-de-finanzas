@@ -26,7 +26,7 @@ export const TesisFileTemplate: React.FC<Props> = ({ title }) => {
             }}
           >
             <a
-              href={`/src/assets/tesis/pdfs/${title.toLowerCase()}.pdf`}
+              href={`/assets/tesis/pdfs/${title.toLowerCase()}.pdf`}
               download
               style={{
                 display: "inline-block",
