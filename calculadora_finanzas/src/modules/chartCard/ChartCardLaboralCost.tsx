@@ -245,6 +245,17 @@ export const ChartCardLaboralCost: React.FC = () => {
     });
   };
 
+  const [isEditing, setIsEditing] = useState(false);
+
+  const handleInputChange =
+    (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+      const value = event.target.value;
+      setFormData((prevData) => ({
+        ...prevData,
+        [field]: value === "" ? "" : parseFloat(value),
+      }));
+    };
+
   const IRPF_MESSAGE = (
     <>
       Coste laboral: <br />
@@ -283,15 +294,15 @@ export const ChartCardLaboralCost: React.FC = () => {
           <Label className="label-item">Salario Bruto Anual</Label>
           <Input
             className="input-item"
-            placeholder="Introduce salario bruto"
-            value={formData.salarioBruto}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                salarioBruto: parseFloat(e.target.value) || 0,
-              })
+            placeholder="Introduce valor futuro deseado en €"
+            value={
+              isEditing
+                ? formData.salarioBruto
+                : formatCurrency(formData.salarioBruto)
             }
-            type="number"
+            onFocus={() => setIsEditing(true)}
+            onBlur={() => setIsEditing(false)}
+            onChange={handleInputChange("salarioBruto")}
           />
         </div>
 

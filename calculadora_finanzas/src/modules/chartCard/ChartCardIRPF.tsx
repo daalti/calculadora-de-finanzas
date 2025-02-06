@@ -245,6 +245,17 @@ export const ChartCardIRPF: React.FC = () => {
     });
   };
 
+  const [isEditing, setIsEditing] = useState(false);
+
+  const handleInputChange =
+    (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+      const value = event.target.value;
+      setFormData((prevData) => ({
+        ...prevData,
+        [field]: value === "" ? "" : parseFloat(value),
+      }));
+    };
+
   const IRPF_MESSAGE = (
     <>
       Salario neto anual:{" "}
@@ -285,14 +296,16 @@ export const ChartCardIRPF: React.FC = () => {
             <Input
               className="input-item"
               placeholder="Introduce salario bruto"
-              value={formData.salarioBruto}
-              onChange={(e) =>
-                setFormData({
-                  ...formData,
-                  salarioBruto: parseFloat(e.target.value) || 0,
-                })
+              value={
+                isEditing
+                  ? formData.salarioBruto === 0
+                    ? ""
+                    : formData.salarioBruto
+                  : formatCurrency(formData.salarioBruto)
               }
-              type="number"
+              onFocus={() => setIsEditing(true)}
+              onBlur={() => setIsEditing(false)}
+              onChange={handleInputChange("salarioBruto")}
             />
           </div>
 
@@ -301,13 +314,15 @@ export const ChartCardIRPF: React.FC = () => {
             <Input
               className="input-item"
               placeholder="Introduce tu edad"
-              value={formData.edad}
+              value={formData.edad === 0 ? "" : formData.edad}
               onChange={(e) =>
                 setFormData({
                   ...formData,
                   edad: parseInt(e.target.value) || 0,
                 })
               }
+              onFocus={() => setIsEditing(true)}
+              onBlur={() => setIsEditing(false)}
               type="number"
               min="16"
               max="100"
@@ -431,7 +446,9 @@ export const ChartCardIRPF: React.FC = () => {
             <Input
               className="input-item"
               placeholder="Introduce número de hijos menores de 25"
-              value={formData.hijosMenores25}
+              value={
+                formData.hijosMenores25 === 0 ? "" : formData.hijosMenores25
+              }
               onChange={(e) =>
                 setFormData({
                   ...formData,
@@ -448,7 +465,7 @@ export const ChartCardIRPF: React.FC = () => {
             <Input
               className="input-item"
               placeholder="Introduce número de hijos menores de 3 años"
-              value={formData.hijosMenores3}
+              value={formData.hijosMenores3 === 0 ? "" : formData.hijosMenores3}
               onChange={(e) =>
                 setFormData({
                   ...formData,
@@ -468,7 +485,7 @@ export const ChartCardIRPF: React.FC = () => {
             <Input
               className="input-item"
               placeholder="Introduce número de personas entre 65 y 75 años a cargo"
-              value={formData.personas65a75}
+              value={formData.personas65a75 === 0 ? "" : formData.personas65a75}
               onChange={(e) =>
                 setFormData({
                   ...formData,
@@ -487,7 +504,11 @@ export const ChartCardIRPF: React.FC = () => {
             <Input
               className="input-item"
               placeholder="Introduce número de personas mayores de 75 años a cargo"
-              value={formData.personasMayores75}
+              value={
+                formData.personasMayores75 === 0
+                  ? ""
+                  : formData.personasMayores75
+              }
               onChange={(e) =>
                 setFormData({
                   ...formData,
@@ -518,7 +539,11 @@ export const ChartCardIRPF: React.FC = () => {
                     <Input
                       className="input-item"
                       placeholder="Introduce número de descendientes con minusvalía entre 33% y 65%"
-                      value={formData.descendientesMinusvalia33a65}
+                      value={
+                        formData.descendientesMinusvalia33a65 === 0
+                          ? ""
+                          : formData.descendientesMinusvalia33a65
+                      }
                       onChange={(e) => {
                         const value = parseInt(e.target.value) || 0;
                         if (
@@ -544,7 +569,11 @@ export const ChartCardIRPF: React.FC = () => {
                     <Input
                       className="input-item"
                       placeholder="Introduce número de descendientes con minusvalía mayor a 65%"
-                      value={formData.descendientesMinusvaliaMas65}
+                      value={
+                        formData.descendientesMinusvaliaMas65 === 0
+                          ? ""
+                          : formData.descendientesMinusvaliaMas65
+                      }
                       onChange={(e) => {
                         const value = parseInt(e.target.value) || 0;
                         if (
@@ -578,7 +607,11 @@ export const ChartCardIRPF: React.FC = () => {
                     <Input
                       className="input-item"
                       placeholder="Introduce número de ascendientes con minusvalía entre 33% y 65%"
-                      value={formData.ascendientesMinusvalia33a65}
+                      value={
+                        formData.ascendientesMinusvalia33a65 === 0
+                          ? ""
+                          : formData.ascendientesMinusvalia33a65
+                      }
                       onChange={(e) =>
                         setFormData({
                           ...formData,
@@ -598,7 +631,11 @@ export const ChartCardIRPF: React.FC = () => {
                     <Input
                       className="input-item"
                       placeholder="Introduce número de ascendientes con minusvalía mayor a 65%"
-                      value={formData.ascendientesMinusvaliaMas65}
+                      value={
+                        formData.ascendientesMinusvaliaMas65 === 0
+                          ? ""
+                          : formData.ascendientesMinusvaliaMas65
+                      }
                       onChange={(e) =>
                         setFormData({
                           ...formData,

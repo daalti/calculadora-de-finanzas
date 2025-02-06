@@ -125,12 +125,12 @@ export const ChartCard: React.FC<Props> = () => {
   };
 
   const handleInputChange =
-    (field: keyof FormData) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-      setFormData({
-        ...formData,
-        [field]: parseFloat(e.target.value) || 0,
-      });
+    (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+      const value = event.target.value;
+      setFormData((prevData) => ({
+        ...prevData,
+        [field]: value === "" ? "" : parseFloat(value),
+      }));
     };
 
   useEffect(() => {
@@ -189,7 +189,9 @@ export const ChartCard: React.FC<Props> = () => {
             placeholder="Introduce cantidad en €"
             value={
               isEditing
-                ? formData.initialInvestment
+                ? formData.initialInvestment === 0
+                  ? ""
+                  : formData.initialInvestment
                 : formatCurrency(formData.initialInvestment)
             }
             onFocus={() => setIsEditing(true)}

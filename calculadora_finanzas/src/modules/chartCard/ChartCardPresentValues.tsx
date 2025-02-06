@@ -90,12 +90,12 @@ export const ChartCardPresentValue: React.FC<Props> = () => {
   };
 
   const handleInputChange =
-    (field: keyof FormData) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-      setFormData({
-        ...formData,
-        [field]: parseFloat(e.target.value) || 0,
-      });
+    (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+      const value = event.target.value;
+      setFormData((prevData) => ({
+        ...prevData,
+        [field]: value === "" ? "" : parseFloat(value),
+      }));
     };
 
   useEffect(() => {

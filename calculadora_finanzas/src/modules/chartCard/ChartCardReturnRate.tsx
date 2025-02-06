@@ -40,11 +40,12 @@ export const ChartCardReturnRate: React.FC = () => {
   };
 
   const handleInputChange =
-    (field: keyof FormData) => (e: React.ChangeEvent<HTMLInputElement>) => {
-      setFormData({
-        ...formData,
-        [field]: parseFloat(e.target.value) || 0,
-      });
+    (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+      const value = event.target.value;
+      setFormData((prevData) => ({
+        ...prevData,
+        [field]: value === "" ? "" : parseFloat(value),
+      }));
     };
 
   const resetValues = () => {
